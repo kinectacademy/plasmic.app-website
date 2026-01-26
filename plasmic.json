@@ -597,6 +597,11 @@
           "id": "jKNJbX7cuWHS",
           "name": "tesda.png",
           "filePath": "../public/plasmic/kinect_academy_inc/images/tesdaPng.png"
+        },
+        {
+          "id": "HUkMKI_Ueu_v",
+          "name": "Group Photo 2023.png",
+          "filePath": "../public/plasmic/kinect_academy_inc/images/groupPhoto2023Png.png"
         }
       ],
       "indirect": false,

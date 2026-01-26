@@ -532,6 +532,24 @@ function PlasmicHomepage__RenderFunc(props: {
           <div className={classNames(projectcss.all, sty.freeBox___72Tsq)}>
             <div className={classNames(projectcss.all, sty.freeBox___67NlN)}>
               <div className={classNames(projectcss.all, sty.freeBox__udQvv)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__vcPwu)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/kinect_academy_inc/images/groupPhoto2023Png.png",
+                    fullWidth: 3799,
+                    fullHeight: 1995,
+                    aspectRatio: undefined
+                  }}
+                />
+
                 <div
                   className={classNames(
                     projectcss.all,

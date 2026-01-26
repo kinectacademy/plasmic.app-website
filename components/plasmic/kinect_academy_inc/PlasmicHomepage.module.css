@@ -571,6 +571,13 @@
   min-width: 0;
   padding: 8px;
 }
+.img__vcPwu {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__vcPwu > picture > img {
+  object-fit: cover;
+}
 .text___0IovM {
   font-size: 20px;
   font-weight: 600;
