@@ -1,17 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // 1. Force static export
   output: 'export',
-  
-  // 1. Disable aggressive minification (Fixes "e is undefined" errors)
-  swcMinify: false, 
 
-  // 2. Ensure images don't try to use a server
+  // 2. Disable aggressive minification to prevent "e is undefined"
+  swcMinify: false,
+
+  // 3. Disable server-side image optimization
   images: {
     unoptimized: true,
   },
-  
-  // 3. standard Next.js setting
+
+  // 4. Ensure paths work correctly on Cloudflare
   trailingSlash: true,
+  
+  // 5. React Strict Mode can sometimes double-render Plasmic components
+  reactStrictMode: false,
 };
 
-module.exports = nextConfig;
+export default nextConfig;
