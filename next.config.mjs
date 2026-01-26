@@ -1,14 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // This enables the static export for Cloudflare
+  output: 'export',
+  
+  // 1. Disable aggressive minification (Fixes "e is undefined" errors)
+  swcMinify: false, 
+
+  // 2. Ensure images don't try to use a server
   images: {
-    unoptimized: true, // Required for static export to work with images
+    unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  
+  // 3. standard Next.js setting
   trailingSlash: true,
-  reactStrictMode: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
