@@ -1,0 +1,50 @@
+/* eslint-disable */
+/* tslint:disable */
+// @ts-nocheck
+/* prettier-ignore-start */
+import React from "react";
+import { classNames } from "@plasmicapp/react-web";
+
+export type Icon15IconProps = React.ComponentProps<"svg"> & {
+  title?: string;
+};
+
+export function Icon15Icon(props: Icon15IconProps) {
+  const { className, style, title, ...restProps } = props;
+  return (
+    <svg
+      xmlns={"http://www.w3.org/2000/svg"}
+      xmlSpace={"preserve"}
+      fill={"currentColor"}
+      version={"1.1"}
+      viewBox={"0 0 32 32"}
+      height={"1em"}
+      className={classNames("plasmic-default__svg", className)}
+      style={style}
+      {...restProps}
+    >
+      {title && <title>{title}</title>}
+
+      <path
+        d={
+          "M30.9 5.6c-.1-.4-.5-.6-.9-.6h-3V2c0-.4-.2-.8-.6-.9-.4-.2-.8-.1-1.1.2l-4 4c-.2.2-.3.4-.3.7v3.6l-5.7 5.7c-.4.4-.4 1 0 1.4.2.2.5.3.7.3s.5-.1.7-.3l5.7-5.7H26c.3 0 .5-.1.7-.3l4-4c.3-.3.4-.7.2-1.1"
+        }
+      ></path>
+
+      <path
+        d={
+          "M18.1 18.1c-.5.6-1.3.9-2.1.9s-1.6-.3-2.1-.9c-1.2-1.2-1.2-3.1 0-4.2l2.8-2.8c-.2-.1-.5-.1-.7-.1-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5c0-.2 0-.5-.1-.7z"
+        }
+      ></path>
+
+      <path
+        d={
+          "M28.1 12.1c-.5.6-1.3.9-2.1.9h-2.8l-.7.7c.3.7.4 1.5.4 2.3 0 3.9-3.1 7-7 7s-7-3.1-7-7 3.1-7 7-7c.8 0 1.6.2 2.3.4l.8-.6V6c0-.8.3-1.6.9-2.1l1-1C19.3 2.3 17.7 2 16 2 8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14c0-1.7-.3-3.3-.9-4.9z"
+        }
+      ></path>
+    </svg>
+  );
+}
+
+export default Icon15Icon;
+/* prettier-ignore-end */
