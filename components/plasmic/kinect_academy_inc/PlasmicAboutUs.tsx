@@ -148,7 +148,7 @@ function PlasmicAboutUs__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <title key="title">{PlasmicAboutUs.pageMetadata.title}</title>
         <meta
           key="og:title"
@@ -159,6 +159,17 @@ function PlasmicAboutUs__RenderFunc(props: {
           key="twitter:title"
           property="twitter:title"
           content={PlasmicAboutUs.pageMetadata.title}
+        />
+
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicAboutUs.pageMetadata.ogImageSrc}
+        />
+        <meta
+          key="twitter:image"
+          property="twitter:image"
+          content={PlasmicAboutUs.pageMetadata.ogImageSrc}
         />
       </Head>
 
@@ -1652,9 +1663,10 @@ export const PlasmicAboutUs = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "About Us",
+      title: "About Us | Kinect Academy Inc.",
       description: "",
-      ogImageSrc: "",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/4c83f9f70da81d0a474d8d59d6e1dc3e.png",
       canonical: ""
     }
   }
