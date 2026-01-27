@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Merriweather%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C700%3B1%2C300%3B1%2C400%3B1%2C700&family=Inconsolata%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Roboto%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C700%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Roboto%3Aital%2Cwght%400%2C100%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C700%3B1%2C100%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C700&display=swap");
 
 .plasmic_tokens {
   --token-fWraxX39UYFB: #ffffff;
@@ -117,12 +117,18 @@
   );
 }
 
+@keyframes boldAnimator8VBoYX7AVh {
+  100% {
+    font-weight: 700;
+  }
+}
+
 .plasmic_default_styles {
   --mixin-RkR4GyVaVl9Q_font-family: "Inter", sans-serif;
   --mixin-RkR4GyVaVl9Q_font-size: 16px;
   --mixin-RkR4GyVaVl9Q_font-weight: 400;
   --mixin-RkR4GyVaVl9Q_font-style: normal;
-  --mixin-RkR4GyVaVl9Q_color: #535353;
+  --mixin-RkR4GyVaVl9Q_color: #2e2e2e;
   --mixin-RkR4GyVaVl9Q_text-align: left;
   --mixin-RkR4GyVaVl9Q_text-transform: none;
   --mixin-RkR4GyVaVl9Q_line-height: 1.5;
@@ -132,26 +138,27 @@
   --mixin-RkR4GyVaVl9Q_text-decoration-line: none;
   --mixin-RkR4GyVaVl9Q_text-overflow: clip;
   --mixin-Lph4NgVHoqwB_color: var(--token-fWraxX39UYFB);
-  --mixin-Lph4NgVHoqwB_font-weight: 400;
+  --mixin-Lph4NgVHoqwB_font-weight: 200;
   --mixin-Lph4NgVHoqwB_font-size: 52px;
   --mixin-Lph4NgVHoqwB_line-height: 1;
   --mixin-Lph4NgVHoqwB_letter-spacing: 0px;
-  --mixin-Lph4NgVHoqwB_font-family: "Merriweather", serif;
+  --mixin-Lph4NgVHoqwB_font-family: "Inter", sans-serif;
   --mixin-Lph4NgVHoqwB_white-space: pre-wrap;
   --mixin-SmaPGxKXyeGb_color: #000000;
-  --mixin-SmaPGxKXyeGb_font-weight: 500;
+  --mixin-SmaPGxKXyeGb_font-weight: 300;
   --mixin-SmaPGxKXyeGb_font-size: 36px;
   --mixin-SmaPGxKXyeGb_line-height: 1.1;
   --mixin-SmaPGxKXyeGb_letter-spacing: 0px;
-  --mixin-SmaPGxKXyeGb_font-family: "Merriweather", serif;
+  --mixin-SmaPGxKXyeGb_font-family: "Inter", sans-serif;
   --mixin-SmaPGxKXyeGb_white-space: pre-wrap;
   --mixin-8B5NK1pJFa3U_color: var(--token-Lbt1IgwYrSUU);
   --mixin-8B5NK1pJFa3U_white-space: pre-wrap;
   --mixin-4Xlhxwn2E6Yg_color: #000000;
-  --mixin-4Xlhxwn2E6Yg_font-weight: 500;
+  --mixin-4Xlhxwn2E6Yg_font-weight: 700;
   --mixin-4Xlhxwn2E6Yg_font-size: 23px;
   --mixin-4Xlhxwn2E6Yg_line-height: 1.2;
   --mixin-4Xlhxwn2E6Yg_letter-spacing: 0px;
+  --mixin-4Xlhxwn2E6Yg_font-family: "Inter", sans-serif;
   --mixin-4Xlhxwn2E6Yg_white-space: pre-wrap;
   --mixin-RBupg749fzV7_color: #000000;
   --mixin-RBupg749fzV7_font-weight: 600;
@@ -211,6 +218,8 @@
   --mixin-FsIbzdv1gufP_border-left-style: solid;
   --mixin-FsIbzdv1gufP_background: linear-gradient(#f8f8f8, #f8f8f8);
   --mixin-FsIbzdv1gufP_white-space: pre-wrap;
+  --mixin-ebD38FQy6fna_white-space: pre-wrap;
+  --mixin-CZ5kpx5fg5Fx_white-space: pre-wrap;
 }
 
 .plasmic_mixins {
@@ -640,6 +649,7 @@ h3:where(.root_reset_tags) {
   font-size: var(--mixin-4Xlhxwn2E6Yg_font-size);
   line-height: var(--mixin-4Xlhxwn2E6Yg_line-height);
   letter-spacing: var(--mixin-4Xlhxwn2E6Yg_letter-spacing);
+  font-family: var(--mixin-4Xlhxwn2E6Yg_font-family);
 }
 
 :where(.root_reset) h4:where(.h4),
@@ -722,4 +732,18 @@ pre:where(.root_reset_tags) {
   border-left: var(--mixin-FsIbzdv1gufP_border-left-width)
     var(--mixin-FsIbzdv1gufP_border-left-style)
     var(--mixin-FsIbzdv1gufP_border-left-color);
+}
+
+:where(.root_reset) em:where(.em),
+em:where(.root_reset.em),
+:where(.root_reset .__wab_expr_html_text) em,
+:where(.root_reset_tags) em,
+em:where(.root_reset_tags) {
+}
+
+:where(.root_reset) h6:where(.h6),
+h6:where(.root_reset.h6),
+:where(.root_reset .__wab_expr_html_text) h6,
+:where(.root_reset_tags) h6,
+h6:where(.root_reset_tags) {
 }

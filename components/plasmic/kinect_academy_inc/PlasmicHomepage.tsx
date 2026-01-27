@@ -173,12 +173,12 @@ function PlasmicHomepage__RenderFunc(props: {
           )}
         >
           <div className={classNames(projectcss.all, sty.freeBox___82Orh)}>
-            <div className={classNames(projectcss.all, sty.freeBox___2QQzw)}>
-              <div className={classNames(projectcss.all, sty.freeBox__twcFb)}>
-                <div className={classNames(projectcss.all, sty.freeBox__r5C1Y)}>
+            <div className={classNames(projectcss.all, sty.freeBox__q4Oin)}>
+              <div className={classNames(projectcss.all, sty.freeBox__zot9V)}>
+                <div className={classNames(projectcss.all, sty.freeBox__aytnG)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__m6Vlk)}
+                    className={classNames(sty.img__q0Xwn)}
                     displayHeight={"default"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -194,13 +194,13 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
 
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__qjpLa)}
+                    className={classNames(projectcss.all, sty.freeBox__uhYpx)}
                   >
                     <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__v5KQq
+                        sty.link__boAwQ
                       )}
                       component={Link}
                       href={`/`}
@@ -208,7 +208,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__kzJeu)}
+                          className={classNames(projectcss.all, sty.svg__mxhDd)}
                           role={"img"}
                         />
                       ) : null}
@@ -216,7 +216,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__kYzU4
+                          sty.text___1Erk
                         )}
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
@@ -225,7 +225,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__wofTq)}
+                          className={classNames(projectcss.all, sty.svg__d8Vuy)}
                           role={"img"}
                         />
                       ) : null}
@@ -234,17 +234,14 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__uzNQt
+                        sty.link__pbOwj
                       )}
                       component={Link}
                       platform={"nextjs"}
                     >
                       {false ? (
                         <IconIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___1KpFv
-                          )}
+                          className={classNames(projectcss.all, sty.svg__xr1X)}
                           role={"img"}
                         />
                       ) : null}
@@ -252,17 +249,14 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__umFq9
+                          sty.text__a6KnN
                         )}
                       >
                         {"Features"}
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___8Bna4
-                          )}
+                          className={classNames(projectcss.all, sty.svg__n51Y0)}
                           role={"img"}
                         />
                       ) : null}
@@ -271,14 +265,17 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__yiafq
+                        sty.link___970O
                       )}
                       component={Link}
                       platform={"nextjs"}
                     >
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__irwRk)}
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___1PsEq
+                          )}
                           role={"img"}
                         />
                       ) : null}
@@ -286,14 +283,14 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__fiNmA
+                          sty.text__pkd4X
                         )}
                       >
                         {"work"}
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__cLwYf)}
+                          className={classNames(projectcss.all, sty.svg__fA331)}
                           role={"img"}
                         />
                       ) : null}
@@ -302,7 +299,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__lye4Q
+                        sty.link___3MgSo
                       )}
                       component={Link}
                       href={`/contact`}
@@ -310,7 +307,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__wuKot)}
+                          className={classNames(projectcss.all, sty.svg__pLjgD)}
                           role={"img"}
                         />
                       ) : null}
@@ -318,14 +315,17 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__jmCY
+                          sty.text__q1AId
                         )}
                       >
                         {"Contact"}
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__usWk8)}
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___7VmG5
+                          )}
                           role={"img"}
                         />
                       ) : null}
@@ -334,7 +334,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link___8BwFx
+                        sty.link__fQsii
                       )}
                       component={Link}
                       href={`/about-us`}
@@ -342,10 +342,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {false ? (
                         <IconIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___3CIpt
-                          )}
+                          className={classNames(projectcss.all, sty.svg__yMJs1)}
                           role={"img"}
                         />
                       ) : null}
@@ -353,30 +350,29 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__xuDJf
+                          sty.text__r66N1
                         )}
                       >
-                        {"ABout"}
+                        {"About"}
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___8URqb
-                          )}
+                          className={classNames(projectcss.all, sty.svg__ePqzD)}
                           role={"img"}
                         />
                       ) : null}
                     </PlasmicLink__>
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__yjukQ)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___0I6BE)}
+                >
                   <button
                     className={classNames(
                       projectcss.all,
                       projectcss.button,
                       projectcss.__wab_text,
-                      sty.button__titG6
+                      sty.button__svrIc
                     )}
                   >
                     {"Sign up"}
@@ -385,14 +381,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__clg6Y
+                      sty.link__wWs4V
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg___2Clwl)}
+                        className={classNames(projectcss.all, sty.svg___3Rx3J)}
                         role={"img"}
                       />
                     ) : null}
@@ -400,14 +396,14 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__waRlZ
+                        sty.text__eKjWb
                       )}
                     >
                       {"Log in"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg___2KpcI)}
+                        className={classNames(projectcss.all, sty.svg__wy4Kg)}
                         role={"img"}
                       />
                     ) : null}
@@ -511,7 +507,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   }}
                   openLinkInNewTab={true}
                   roundedFull={true}
-                  size={"small"}
+                  size={"large"}
                   start={
                     <Icon4Icon
                       className={classNames(projectcss.all, sty.svg__bspZp)}

@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import Button2 from "../../Button2"; // plasmic-import: 08WU9IokPT6n/component
 import Button from "../../Button"; // plasmic-import: jt2j7CHc7KBU/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/styleTokensProvider
@@ -69,6 +70,9 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: qrgzy9hj6GGeC3
 import sty from "./PlasmicAboutUs.module.css"; // plasmic-import: JX1k51GgglQQ/css
 
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: HL2cx3XqKX6Z/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: XRWVBDzNjWYR/icon
+import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: IdyPZ2PRL2vb/icon
+import ArrowDownSvgIcon from "./icons/PlasmicIcon__ArrowDownSvg"; // plasmic-import: 2QZVkZITGcT-/icon
 import Icon15Icon from "./icons/PlasmicIcon__Icon15"; // plasmic-import: ptEeGwwDFAnw/icon
 import Icon14Icon from "./icons/PlasmicIcon__Icon14"; // plasmic-import: 5VS5c4WaG97g/icon
 import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: tq99IOsRzckU/icon
@@ -90,8 +94,9 @@ export const PlasmicAboutUs__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAboutUs__OverridesType = {
   root?: Flex__<"div">;
+  foreground2?: Flex__<"div">;
+  registerLink?: Flex__<typeof Button2>;
   foreground?: Flex__<"div">;
-  h1?: Flex__<"h1">;
   foreground3?: Flex__<"div">;
 };
 
@@ -178,13 +183,13 @@ function PlasmicAboutUs__RenderFunc(props: {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox___33Ck)}>
-            <div className={classNames(projectcss.all, sty.freeBox__tOe95)}>
-              <div className={classNames(projectcss.all, sty.freeBox__qCSv1)}>
-                <div className={classNames(projectcss.all, sty.freeBox__rKa9U)}>
+          <div className={classNames(projectcss.all, sty.freeBox__mqSfL)}>
+            <div className={classNames(projectcss.all, sty.freeBox___0MMxs)}>
+              <div className={classNames(projectcss.all, sty.freeBox__haVy9)}>
+                <div className={classNames(projectcss.all, sty.freeBox__haUl7)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__aw5Ce)}
+                    className={classNames(sty.img__b3Dlz)}
                     displayHeight={"default"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -200,13 +205,13 @@ function PlasmicAboutUs__RenderFunc(props: {
                   />
 
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__c0Xvp)}
+                    className={classNames(projectcss.all, sty.freeBox__xywXt)}
                   >
                     <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link___1Roak
+                        sty.link__uUfyF
                       )}
                       component={Link}
                       href={`/`}
@@ -214,7 +219,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     >
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__sFoIy)}
+                          className={classNames(projectcss.all, sty.svg__h2Ig3)}
                           role={"img"}
                         />
                       ) : null}
@@ -222,7 +227,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__adPH
+                          sty.text__qo7UX
                         )}
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
@@ -231,7 +236,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__p677V)}
+                          className={classNames(projectcss.all, sty.svg__lpztE)}
                           role={"img"}
                         />
                       ) : null}
@@ -240,7 +245,38 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link___1YKko
+                        sty.link__frgj
+                      )}
+                      component={Link}
+                      platform={"nextjs"}
+                    >
+                      {false ? (
+                        <IconIcon
+                          className={classNames(projectcss.all, sty.svg__vImFe)}
+                          role={"img"}
+                        />
+                      ) : null}
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__q64I
+                        )}
+                      >
+                        {"Features"}
+                      </div>
+                      {false ? (
+                        <IconIcon
+                          className={classNames(projectcss.all, sty.svg__h86C)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__xy4Wd
                       )}
                       component={Link}
                       platform={"nextjs"}
@@ -249,7 +285,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                         <IconIcon
                           className={classNames(
                             projectcss.all,
-                            sty.svg___9Pme0
+                            sty.svg___5CdQ9
                           )}
                           role={"img"}
                         />
@@ -258,45 +294,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__ietDw
-                        )}
-                      >
-                        {"Features"}
-                      </div>
-                      {false ? (
-                        <IconIcon
-                          className={classNames(projectcss.all, sty.svg__zxvmB)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__pEds
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {false ? (
-                        <IconIcon
-                          className={classNames(projectcss.all, sty.svg__ozoBa)}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__hKnR
+                          sty.text__uiSig
                         )}
                       >
                         {"work"}
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__quZVl)}
+                          className={classNames(projectcss.all, sty.svg__cgdxx)}
                           role={"img"}
                         />
                       ) : null}
@@ -305,7 +310,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__jvwOq
+                        sty.link__uqhR3
                       )}
                       component={Link}
                       href={`/contact`}
@@ -313,7 +318,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     >
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__mTQnh)}
+                          className={classNames(projectcss.all, sty.svg__zUFff)}
                           role={"img"}
                         />
                       ) : null}
@@ -321,14 +326,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__mnpD
+                          sty.text__jRiUz
                         )}
                       >
                         {"Contact"}
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__xfsuV)}
+                          className={classNames(projectcss.all, sty.svg__rx4Ek)}
                           role={"img"}
                         />
                       ) : null}
@@ -337,7 +342,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__sseik
+                        sty.link__q27K
                       )}
                       component={Link}
                       href={`/about-us`}
@@ -345,7 +350,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     >
                       {false ? (
                         <IconIcon
-                          className={classNames(projectcss.all, sty.svg__i49X1)}
+                          className={classNames(projectcss.all, sty.svg__rEoN)}
                           role={"img"}
                         />
                       ) : null}
@@ -353,23 +358,174 @@ function PlasmicAboutUs__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__ld0Yo
+                          sty.text__zeXvY
                         )}
                       >
                         {"About"}
                       </div>
                       {false ? (
                         <IconIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___3ZAeT
-                          )}
+                          className={classNames(projectcss.all, sty.svg__yVpCu)}
                           role={"img"}
                         />
                       ) : null}
                     </PlasmicLink__>
                   </div>
                 </div>
+                <div className={classNames(projectcss.all, sty.freeBox__seGo)}>
+                  <button
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      projectcss.__wab_text,
+                      sty.button__kgaRc
+                    )}
+                  >
+                    {"Sign up"}
+                  </button>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__cp1Xo
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {false ? (
+                      <IconIcon
+                        className={classNames(projectcss.all, sty.svg__cbWqc)}
+                        role={"img"}
+                      />
+                    ) : null}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__hszMw
+                      )}
+                    >
+                      {"Log in"}
+                    </div>
+                    {false ? (
+                      <IconIcon
+                        className={classNames(projectcss.all, sty.svg__vziVt)}
+                        role={"img"}
+                      />
+                    ) : null}
+                  </PlasmicLink__>
+                </div>
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"foreground2"}
+              data-plasmic-override={overrides.foreground2}
+              className={classNames(projectcss.all, sty.foreground2)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__yS8Fr)}>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__vwtb4
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{"Join the "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "var(--token-Dd6gyjIVe7XT)" }}
+                    >
+                      {"Kinect"}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#51D1FF" }}
+                    >
+                      {" Academy"}
+                    </span>
+                    <React.Fragment>{" Family!"}</React.Fragment>
+                  </React.Fragment>
+                </h1>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__mWfQp
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "var(--token-Dd6gyjIVe7XT)" }}
+                    >
+                      {"SENIOR HIGH SCHOOL | GAPAN CITY"}
+                    </span>
+                  </React.Fragment>
+                </div>
+                <Button2
+                  data-plasmic-name={"registerLink"}
+                  data-plasmic-override={overrides.registerLink}
+                  className={classNames("__wab_instance", sty.registerLink)}
+                  disabled={false}
+                  end={
+                    <Icon6Icon
+                      className={classNames(projectcss.all, sty.svg__e5ZsA)}
+                      role={"img"}
+                    />
+                  }
+                  iconEnd={true}
+                  label={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__m6Hpx
+                      )}
+                    >
+                      {"REGISTER NOW"}
+                    </div>
+                  }
+                  linkTo={"https://forms.gle/rse2ggxXWFjCuugY9"}
+                  onClick={async event => {
+                    const $steps = {};
+
+                    $steps["runElementAction"] = true
+                      ? (() => {
+                          const actionArgs = {};
+                          return (({ tplRef, action, args }) => {
+                            return $refs?.[tplRef]?.[action]?.(...(args ?? []));
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      $steps["runElementAction"] != null &&
+                      typeof $steps["runElementAction"] === "object" &&
+                      typeof $steps["runElementAction"].then === "function"
+                    ) {
+                      $steps["runElementAction"] =
+                        await $steps["runElementAction"];
+                    }
+                  }}
+                  openLinkInNewTab={true}
+                  roundedFull={true}
+                  size={"small"}
+                  start={
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg___5D2S6)}
+                      role={"img"}
+                    />
+                  }
+                  type={"soft"}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__xcgIg)}>
+                <ArrowDownSvgIcon
+                  className={classNames(projectcss.all, sty.svg__zhq95)}
+                  role={"img"}
+                />
               </div>
             </div>
           </div>
@@ -407,13 +563,11 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.freeBox__y6S8)}
                     >
                       <h1
-                        data-plasmic-name={"h1"}
-                        data-plasmic-override={overrides.h1}
                         className={classNames(
                           projectcss.all,
                           projectcss.h1,
                           projectcss.__wab_text,
-                          sty.h1
+                          sty.h1__sgxzz
                         )}
                       >
                         {"Our Journey & Purpose"}
@@ -1408,9 +1562,10 @@ function PlasmicAboutUs__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "foreground", "h1", "foreground3"],
-  foreground: ["foreground", "h1"],
-  h1: ["h1"],
+  root: ["root", "foreground2", "registerLink", "foreground", "foreground3"],
+  foreground2: ["foreground2", "registerLink"],
+  registerLink: ["registerLink"],
+  foreground: ["foreground"],
   foreground3: ["foreground3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1418,8 +1573,9 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  foreground2: "div";
+  registerLink: typeof Button2;
   foreground: "div";
-  h1: "h1";
   foreground3: "div";
 };
 
@@ -1485,8 +1641,9 @@ export const PlasmicAboutUs = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    foreground2: makeNodeComponent("foreground2"),
+    registerLink: makeNodeComponent("registerLink"),
     foreground: makeNodeComponent("foreground"),
-    h1: makeNodeComponent("h1"),
     foreground3: makeNodeComponent("foreground3"),
 
     // Metadata about props expected for PlasmicAboutUs
