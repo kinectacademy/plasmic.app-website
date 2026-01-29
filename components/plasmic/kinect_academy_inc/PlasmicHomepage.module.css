@@ -95,7 +95,6 @@
   }
 }
 .img__q0Xwn {
-  animation: none;
   object-fit: cover;
   width: 96px;
 }
@@ -108,7 +107,6 @@
   }
 }
 .freeBox__uhYpx {
-  animation: none;
   display: flex;
   position: relative;
   flex-direction: row;
@@ -510,11 +508,11 @@
   width: 689px;
   height: auto;
   max-width: 100%;
-  margin-top: 168px;
   background: none;
   row-gap: 20px;
   border-radius: 12px;
   padding: 30px;
+  margin: 100px 0px 0px;
   border: 1px solid #cccccc57;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -633,6 +631,10 @@
   max-width: 1200px;
   min-width: 0;
   padding: 8px 8px 34px;
+}
+.reveal:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
 }
 .freeBox__udQvv {
   display: flex;

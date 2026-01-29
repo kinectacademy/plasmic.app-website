@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Button2 from "../../Button2"; // plasmic-import: 08WU9IokPT6n/component
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import Button from "../../Button"; // plasmic-import: jt2j7CHc7KBU/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/styleTokensProvider
@@ -98,6 +99,7 @@ export type PlasmicHomepage__OverridesType = {
   foreground2?: Flex__<"div">;
   h1?: Flex__<"h1">;
   registerLink?: Flex__<typeof Button2>;
+  reveal?: Flex__<typeof Reveal>;
   foreground?: Flex__<"div">;
   foreground3?: Flex__<"div">;
 };
@@ -209,6 +211,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"96px"}
+                    loading={"eager"}
                     src={{
                       src: "/plasmic/kinect_academy_inc/images/kinectIconLightPng.png",
                       fullWidth: 1000,
@@ -551,259 +554,272 @@ function PlasmicHomepage__RenderFunc(props: {
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___72Tsq)}>
             <div className={classNames(projectcss.all, sty.freeBox___67NlN)}>
-              <div className={classNames(projectcss.all, sty.freeBox__udQvv)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__vcPwu)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/kinect_academy_inc/images/groupPhoto2023Png.png",
-                    fullWidth: 3799,
-                    fullHeight: 1995,
-                    aspectRatio: undefined
-                  }}
-                />
+              <Reveal
+                data-plasmic-name={"reveal"}
+                data-plasmic-override={overrides.reveal}
+                cascade={true}
+                className={classNames("__wab_instance", sty.reveal)}
+                damping={1000}
+                delay={300}
+                triggerOnce={true}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__udQvv)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__vcPwu)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/kinect_academy_inc/images/groupPhoto2023Png.png",
+                      fullWidth: 3799,
+                      fullHeight: 1995,
+                      aspectRatio: undefined
+                    }}
+                  />
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___0IovM
-                  )}
-                >
-                  {"SERVICES"}
-                </div>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__tmW09
-                  )}
-                >
-                  {"What do we offer?"}
-                </h2>
-                <section
-                  className={classNames(projectcss.all, sty.section__hraNe)}
-                >
                   <div
-                    data-plasmic-name={"foreground"}
-                    data-plasmic-override={overrides.foreground}
-                    className={classNames(projectcss.all, sty.foreground)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___0IovM
+                    )}
+                  >
+                    {"SERVICES"}
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__tmW09
+                    )}
+                  >
+                    {"What do we offer?"}
+                  </h2>
+                  <section
+                    className={classNames(projectcss.all, sty.section__hraNe)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__uh24X)}
+                      data-plasmic-name={"foreground"}
+                      data-plasmic-override={overrides.foreground}
+                      className={classNames(projectcss.all, sty.foreground)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__xGzHq
+                          sty.freeBox__uh24X
                         )}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__k6Tu
+                            sty.freeBox__xGzHq
                           )}
                         >
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__puolL
+                              sty.freeBox__k6Tu
                             )}
                           >
-                            <Icon11Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__lKVy1
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          {false ? (
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox___9PRpS
+                                sty.freeBox__puolL
                               )}
                             >
-                              <Icon8Icon
+                              <Icon11Icon
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__awunN
+                                  sty.svg__lKVy1
                                 )}
                                 role={"img"}
                               />
                             </div>
-                          ) : null}
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__zyBk5
-                            )}
-                          >
-                            <h3
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3___4CxSf
-                              )}
-                            >
-                              {"FACILITIES"}
-                            </h3>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__ljn4I
-                              )}
-                            >
-                              {"Fully air-conditioned clean classrooms."}
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__y53Xj
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__xXa4Q
-                            )}
-                          >
-                            <Icon12Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__s9L39
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          {false ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__lhTdw
-                              )}
-                            >
-                              <Icon8Icon
+                            {false ? (
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__mtXue
+                                  sty.freeBox___9PRpS
+                                )}
+                              >
+                                <Icon8Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__awunN
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            ) : null}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__zyBk5
+                              )}
+                            >
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3___4CxSf
+                                )}
+                              >
+                                {"FACILITIES"}
+                              </h3>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__ljn4I
+                                )}
+                              >
+                                {"Fully air-conditioned clean classrooms."}
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__y53Xj
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__xXa4Q
+                              )}
+                            >
+                              <Icon12Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__s9L39
                                 )}
                                 role={"img"}
                               />
                             </div>
-                          ) : null}
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__lYceE
-                            )}
-                          >
-                            <h3
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3__sebwr
-                              )}
-                            >
-                              {"CHARACTER"}
-                            </h3>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__phahD
-                              )}
-                            >
-                              {
-                                "We teach not just intelligence, but Godly character and ethics."
-                              }
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__liMxO
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__s572P
-                            )}
-                          >
-                            <Icon13Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__hJ8Tv
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          {false ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__aQlvc
-                              )}
-                            >
-                              <Icon8Icon
+                            {false ? (
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__wDnM8
+                                  sty.freeBox__lhTdw
+                                )}
+                              >
+                                <Icon8Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__mtXue
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            ) : null}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__lYceE
+                              )}
+                            >
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__sebwr
+                                )}
+                              >
+                                {"CHARACTER"}
+                              </h3>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__phahD
+                                )}
+                              >
+                                {
+                                  "We teach not just intelligence, but Godly character and ethics."
+                                }
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__liMxO
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__s572P
+                              )}
+                            >
+                              <Icon13Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__hJ8Tv
                                 )}
                                 role={"img"}
                               />
                             </div>
-                          ) : null}
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__zTg0I
-                            )}
-                          >
-                            <h3
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3__etxDk
-                              )}
-                            >
-                              {"EDUCATION"}
-                            </h3>
+                            {false ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__aQlvc
+                                )}
+                              >
+                                <Icon8Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__wDnM8
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            ) : null}
                             <div
                               className={classNames(
                                 projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___8Dz3I
+                                sty.freeBox__zTg0I
                               )}
                             >
-                              {
-                                "Our teachers adapt to every student to reach their full potential."
-                              }
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__etxDk
+                                )}
+                              >
+                                {"EDUCATION"}
+                              </h3>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___8Dz3I
+                                )}
+                              >
+                                {
+                                  "Our teachers adapt to every student to reach their full potential."
+                                }
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </section>
-              </div>
+                  </section>
+                </div>
+              </Reveal>
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__ykA7Y)}>
@@ -1660,12 +1676,14 @@ const PlasmicDescendants = {
     "foreground2",
     "h1",
     "registerLink",
+    "reveal",
     "foreground",
     "foreground3"
   ],
   foreground2: ["foreground2", "h1", "registerLink"],
   h1: ["h1"],
   registerLink: ["registerLink"],
+  reveal: ["reveal", "foreground"],
   foreground: ["foreground"],
   foreground3: ["foreground3"]
 } as const;
@@ -1677,6 +1695,7 @@ type NodeDefaultElementType = {
   foreground2: "div";
   h1: "h1";
   registerLink: typeof Button2;
+  reveal: typeof Reveal;
   foreground: "div";
   foreground3: "div";
 };
@@ -1746,6 +1765,7 @@ export const PlasmicHomepage = Object.assign(
     foreground2: makeNodeComponent("foreground2"),
     h1: makeNodeComponent("h1"),
     registerLink: makeNodeComponent("registerLink"),
+    reveal: makeNodeComponent("reveal"),
     foreground: makeNodeComponent("foreground"),
     foreground3: makeNodeComponent("foreground3"),
 

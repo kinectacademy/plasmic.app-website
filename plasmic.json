@@ -625,6 +625,62 @@
         }
       ],
       "customFunctions": []
+    },
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/react_awesome_reveal/PlasmicStyleTokensProvider.tsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/react_awesome_reveal/plasmic.tsx",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "displayName": "hostless-reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "axVArpcqgHCPMKB2yUGsW3",
+      "projectApiToken": "d8UPLYphoxWJyIkfjww0UtNZijnhGYEzblzwwvbZ4inmZVmHBcolZVTPYtNkh6wsPfnQSAoYq5zuj13NQdUA",
+      "projectName": "[PlasmicKit] Animations",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_kit_animations/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/plasmic_kit_animations/PlasmicStyleTokensProvider.tsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/plasmic_kit_animations/plasmic.tsx",
+      "codeComponents": [
+        {
+          "id": "QG4_OGucsyMZ",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "GKuemYaPBvo9",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
     }
   ],
   "globalVariants": {
@@ -634,6 +690,12 @@
         "name": "Screen",
         "projectId": "qrgzy9hj6GGeC381EGfELp",
         "contextFilePath": "plasmic/kinect_academy_inc/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "aTL61Gk1GKw5",
+        "name": "Screen",
+        "projectId": "axVArpcqgHCPMKB2yUGsW3",
+        "contextFilePath": "plasmic/plasmic_kit_animations/PlasmicGlobalVariant__Screen.tsx"
       }
     ]
   },
@@ -642,6 +704,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.354",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.354/dist/plasmic.schema.json"
+  "cliVersion": "0.1.355",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.355/dist/plasmic.schema.json"
 }
