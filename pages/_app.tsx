@@ -15,22 +15,25 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
 
-      <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
-        <motion.div
-          key={router.asPath}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          style={{ 
-            backgroundColor: 'var(--background)', 
-            minHeight: '100vh',
-            width: '100%' // Ensures the div doesn't collapse horizontally
-          }}
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
+      {/* PERSISTENT WRAPPER: This div never leaves the DOM. 
+          It blocks the 'Black Flash' and the 'Giant Logo' glitch. */}
+      <div id="page-root" style={{ backgroundColor: 'var(--background)', minHeight: '100vh' }}>
+        <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+          <motion.div
+            key={router.asPath}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            style={{ 
+              width: '100%',
+              backgroundColor: 'var(--background)' 
+            }}
+          >
+            <Component {...pageProps} />
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </ReactLenis>
   );
 }
