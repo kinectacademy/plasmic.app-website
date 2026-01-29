@@ -10,12 +10,15 @@
   }
 }
 
-/* 1. Prevent "Black Flash" by forcing a solid background on the root */
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background: var(--background) !important; /* Forces the background color immediately */
+  /* CRITICAL: Remove !important here. 
+     Framer Motion needs to control the opacity of the wrapper div.
+     We keep the background color to prevent the black flash.
+  */
+  background-color: var(--background); 
 }
 
 body {
@@ -25,26 +28,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.page-fade-in {
-  /* This ensures the page is invisible BEFORE the animation starts */
-  opacity: 0; 
-  animation: fadeIn 0.6s ease-out forwards;
-  /* Helps performance during transitions */
-  will-change: opacity, transform; 
-}
+/* REMOVED: .page-fade-in and @keyframes fadeIn.
+   Framer Motion in _app.tsx handles this now! 
+*/
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Rest of your existing styles */
 * {
   box-sizing: border-box;
   padding: 0;

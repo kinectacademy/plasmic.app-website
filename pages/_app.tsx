@@ -2,31 +2,32 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ReactLenis } from 'lenis/react';
-import { useEffect } from 'react'; // Added to debug
+import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
-  // Debugging: This will print in your browser console every time you change pages
-  useEffect(() => {
-    console.log("Route changed to:", router.asPath);
-  }, [router.asPath]);
-
   return (
-    <ReactLenis root options={{ lerp: 0.1, duration: 1.2 }}>
+    <ReactLenis root options={{ lerp: 0.1, duration: 1.2, smoothWheel: true }}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Explicit favicon link helps prevent that 'huge logo' flash */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      {/* Use a unique ID and key to ensure the browser sees this as a 'new' element on every page */}
-      <div 
-        id="page-wrapper"
-        key={router.asPath} 
-        className="page-fade-in"
-      >
-        <Component {...pageProps} />
-      </div>
+
+      {/* popLayout is the secret to fading the new page 'over' the old one */}
+      <AnimatePresence mode="popLayout" initial={false}>
+        <motion.div
+          key={router.asPath}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+        >
+          <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
     </ReactLenis>
   );
 }
