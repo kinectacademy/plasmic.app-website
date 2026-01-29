@@ -12,11 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ReactLenis root options={{ lerp: 0.1, duration: 1.2, smoothWheel: true }}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* We only use the favicon.ico to keep the browser happy without giant PNGs */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* This Wrapper ensures the background is NEVER empty/black */}
       <div className="app-container">
         <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
           <motion.div
@@ -24,8 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="page-wrapper"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <Component {...pageProps} />
           </motion.div>
