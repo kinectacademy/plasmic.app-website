@@ -9,31 +9,23 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
-    <ReactLenis root options={{ lerp: 0.1, duration: 1.2, smoothWheel: true }}>
+    <ReactLenis root options={{ lerp: 0.1, duration: 1.2 }}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* PERSISTENT WRAPPER: This div never leaves the DOM. 
-          It blocks the 'Black Flash' and the 'Giant Logo' glitch. */}
-      <div id="page-root" style={{ backgroundColor: 'var(--background)', minHeight: '100vh' }}>
-        <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
-          <motion.div
-            key={router.asPath}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            style={{ 
-              width: '100%',
-              backgroundColor: 'var(--background)' 
-            }}
-          >
-            <Component {...pageProps} />
-          </motion.div>
-        </AnimatePresence>
-      </div>
+      <AnimatePresence mode="popLayout" initial={false}>
+        <motion.div
+          key={router.asPath}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+        >
+          <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
     </ReactLenis>
   );
 }

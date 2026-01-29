@@ -10,53 +10,30 @@
   }
 }
 
-/* 1. Global Reset & Performance */
+/* 1. Basic Reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* 2. Fix the Black Screen */
 html, body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  /* This prevents the 'White/Black Flash' at the root level */
-  background-color: var(--background) !important;
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  /* This prevents the transition from jumping */
+  height: 100%; 
 }
 
-/* 2. THE NUCLEAR LOGO FIX */
-/* We target the image by class AND src. 
-   Even if Plasmic says width: 0px, this !important overrides it. */
-img.__wab_img[src*="kinectIconLightPng"],
-img[src*="kinectIconLightPng"] {
-  width: 150px !important;  /* Set this to your desired logo width */
-  min-width: 150px !important;
-  height: auto !important;
-  min-height: 10px !important;
-  opacity: 1 !important;
-  display: block !important;
-  /* Prevent the image from 'stretching' if the container is weird */
-  object-fit: contain !important;
-}
-
-/* Prevent the container of the logo from collapsing to 0px */
-div:has(> img[src*="kinectIconLightPng"]) {
-  min-width: 150px !important;
-  min-height: 40px !important;
-  display: flex !important;
-  align-items: center;
-}
-
-/* 3. General Cleanup */
+/* 3. Pure Layout Fix */
+/* Instead of forcing the logo, we just ensure images don't 
+   break their containers during the fade */
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+/* If the logo is still popping, it's because it's set to 'lazy'. 
+   In Plasmic, select your logo and set Loading to 'Eager'. */
