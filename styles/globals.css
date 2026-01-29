@@ -10,30 +10,51 @@
   }
 }
 
-/* 1. Basic Reset */
+/* 1. Fix Scrolling & Background */
+html, body {
+  background-color: var(--background) !important;
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+.app-container {
+  background-color: var(--background);
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 2. THE LOGO KILLER (The "Ghost" Fix) */
+/* This hides any image that Next.js auto-injects into the body 
+   before the actual page content is ready. */
+body > img, 
+body > svg,
+body > div:not(.app-container) img {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* 3. General Reset */
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
-/* 2. Fix the Black Screen */
-html, body {
-  background-color: var(--background);
-  color: var(--foreground);
-  overflow-x: hidden;
-  /* This prevents the transition from jumping */
-  height: 100%; 
-}
-
-/* 3. Pure Layout Fix */
-/* Instead of forcing the logo, we just ensure images don't 
-   break their containers during the fade */
 img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
-/* If the logo is still popping, it's because it's set to 'lazy'. 
-   In Plasmic, select your logo and set Loading to 'Eager'. */
+a {
+  color: inherit;
+  text-decoration: none;
+}

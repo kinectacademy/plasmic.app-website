@@ -9,23 +9,28 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
-    <ReactLenis root options={{ lerp: 0.1, duration: 1.2 }}>
+    <ReactLenis root options={{ lerp: 0.1, duration: 1.2, smoothWheel: true }}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* We only use the favicon.ico to keep the browser happy without giant PNGs */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AnimatePresence mode="popLayout" initial={false}>
-        <motion.div
-          key={router.asPath}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
+      {/* This Wrapper ensures the background is NEVER empty/black */}
+      <div className="app-container">
+        <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+          <motion.div
+            key={router.asPath}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="page-wrapper"
+          >
+            <Component {...pageProps} />
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </ReactLenis>
   );
 }
