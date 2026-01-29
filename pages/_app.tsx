@@ -12,29 +12,25 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ReactLenis root options={{ lerp: 0.1, duration: 1.2, smoothWheel: true }}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Explicit favicon link helps prevent that 'huge logo' flash */}
-		<link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
 
-      {/* popLayout is the secret to fading the new page 'over' the old one */}
-		<AnimatePresence mode="popLayout" initial={false}>
-		  <motion.div
-			key={router.asPath}
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-			transition={{ duration: 0.4, ease: "easeInOut" }}
-			style={{ 
-			  width: '100%', 
-			  minHeight: '100vh', 
-			  backgroundColor: 'var(--background)',
-			  position: 'relative',
-			  zIndex: 1
-			}}
-		  >
-			<Component {...pageProps} />
-		  </motion.div>
-		</AnimatePresence>
+      <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+        <motion.div
+          key={router.asPath}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          style={{ 
+            backgroundColor: 'var(--background)', 
+            minHeight: '100vh',
+            width: '100%' // Ensures the div doesn't collapse horizontally
+          }}
+        >
+          <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
     </ReactLenis>
   );
 }
