@@ -48,3 +48,23 @@ a {
     color-scheme: dark;
   }
 }
+
+/* 1. Prevent the 'Huge Logo' glitch */
+/* This targets the icon file specifically if it accidentally renders as an img or object */
+img[src*="favicon"], 
+img[src*="logo"] {
+  max-width: 100%; /* Prevents it from being 'infinite' size */
+  height: auto;
+}
+
+/* 2. Force a solid background on the actual transition container */
+#page-wrapper, 
+.page-fade-in,
+main {
+  background-color: var(--background) !important;
+}
+
+/* 3. Hide any 'stray' favicon elements that aren't in the <head> */
+body > img:first-child:last-child {
+    display: none !important;
+}
