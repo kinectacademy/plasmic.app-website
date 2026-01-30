@@ -1,21 +1,36 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // YOUR STATIC EXPORT SETTINGS (KEEP THESE)
   output: 'export',
-  swcMinify: false,
+  swcMinify: false,  // Static sites prefer no minification
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static export
   },
   trailingSlash: true,
   reactStrictMode: false,
 
-  // 1. Ignore ESLint errors during build (Fixes the Button.tsx/plasmic-host errors)
+  // BUILD IGNORES (KEEP THESE - Plasmic compatibility)
   eslint: {
     ignoreDuringBuilds: true,
   },
-
-  // 2. Ignore TypeScript errors during build (Ensures nothing else stops the export)
   typescript: {
     ignoreBuildErrors: true,
+  },
+
+  // NEW: FOUC + Performance (Static-safe)
+  optimizeFonts: true,           // Font optimization (static-safe)
+  transpilePackages: ['lenis', 'framer-motion'], // Smooth scroll + transitions
+  
+  // Static export headers (perf)
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+    ];
   },
 };
 
