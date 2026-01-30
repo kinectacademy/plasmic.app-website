@@ -10,7 +10,6 @@
   }
 }
 
-/* 1. Reset & Background Fix */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,34 +17,20 @@
 }
 
 html, body {
-  background-color: var(--background) !important;
+  background-color: var(--background);
   color: var(--foreground);
-  /* Prevents scrolling from breaking during the transition */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Standard Next.js / Plasmic scroll behavior */
   overflow-x: hidden;
-  min-height: 100%;
 }
 
-/* 2. THE GHOST LOGO KILLER */
-/* We ONLY hide images that are direct children of the body. 
-   Actual site images are deeper in the div tree, so they stay visible. */
-body > img, 
-body > svg {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-/* 3. Global Image Safety */
+/* Ensure images behave normally within Plasmic containers */
 img {
   max-width: 100%;
   height: auto;
-  /* This ensures images don't 'pop' into existence too harshly */
-  transition: opacity 0.2s ease-in;
 }
 
-/* 4. Fix for the 'Loading Screen' Look */
-/* If the CSS loads late, this ensures the container is ready */
-.app-container {
-  min-height: 100vh;
-  width: 100%;
-  background-color: var(--background);
+a {
+  color: inherit;
+  text-decoration: none;
 }
