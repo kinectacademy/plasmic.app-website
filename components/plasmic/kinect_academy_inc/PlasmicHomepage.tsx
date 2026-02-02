@@ -246,9 +246,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.text___1Erk
                         )}
                       >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Services"
-                          : "HOME"}
+                        {"HOME"}
                       </div>
                       {false ? (
                         <IconIcon
