@@ -640,6 +640,16 @@
   min-width: 0;
   padding: 68px 8px 17px;
 }
+.reveal:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.img__ckSaZ {
+  object-fit: cover;
+}
+.img__ckSaZ > picture > img {
+  object-fit: cover;
+}
 .freeBox__bfmLl {
   display: flex;
   position: relative;

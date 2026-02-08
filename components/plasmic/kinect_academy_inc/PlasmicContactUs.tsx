@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Button2 from "../../Button2"; // plasmic-import: 08WU9IokPT6n/component
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/styleTokensProvider
 
@@ -97,6 +98,7 @@ export type PlasmicContactUs__OverridesType = {
   foreground2?: Flex__<"div">;
   h1?: Flex__<"h1">;
   registerLink?: Flex__<typeof Button2>;
+  reveal?: Flex__<typeof Reveal>;
   h2?: Flex__<"h2">;
   section?: Flex__<"section">;
   foreground?: Flex__<"div">;
@@ -550,494 +552,505 @@ function PlasmicContactUs__RenderFunc(props: {
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__yr45C)}>
-            <div className={classNames(projectcss.all, sty.freeBox__tj8XS)}>
-              <div className={classNames(projectcss.all, sty.freeBox__haYy7)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__wmRkq
-                  )}
-                >
-                  {"CONTACT US"}
-                </div>
-                <h2
-                  data-plasmic-name={"h2"}
-                  data-plasmic-override={overrides.h2}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2
-                  )}
-                >
-                  {"Who is Kinect Academy ?"}
-                </h2>
-                <section
-                  data-plasmic-name={"section"}
-                  data-plasmic-override={overrides.section}
-                  className={classNames(projectcss.all, sty.section)}
-                >
+            <Reveal
+              data-plasmic-name={"reveal"}
+              data-plasmic-override={overrides.reveal}
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal)}
+              triggerOnce={true}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__tj8XS)}>
+                <div className={classNames(projectcss.all, sty.freeBox__haYy7)}>
                   <div
-                    data-plasmic-name={"foreground"}
-                    data-plasmic-override={overrides.foreground}
-                    className={classNames(projectcss.all, sty.foreground)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wmRkq
+                    )}
+                  >
+                    {"CONTACT US"}
+                  </div>
+                  <h2
+                    data-plasmic-name={"h2"}
+                    data-plasmic-override={overrides.h2}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2
+                    )}
+                  >
+                    {"Who is Kinect Academy ?"}
+                  </h2>
+                  <section
+                    data-plasmic-name={"section"}
+                    data-plasmic-override={overrides.section}
+                    className={classNames(projectcss.all, sty.section)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__xvKiv)}
+                      data-plasmic-name={"foreground"}
+                      data-plasmic-override={overrides.foreground}
+                      className={classNames(projectcss.all, sty.foreground)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__sPhpb
+                          sty.freeBox__xvKiv
                         )}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__zlETs
+                            sty.freeBox__sPhpb
                           )}
                         >
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__yZ66R
+                              sty.freeBox__zlETs
                             )}
                           >
-                            <Icon24Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__urfzp
-                              )}
-                              onClick={async event => {
-                                const $steps = {};
-
-                                $steps["goToTel09262456828"] = true
-                                  ? (() => {
-                                      const actionArgs = {
-                                        destination: "tel:0926-245-6828"
-                                      };
-                                      return (({ destination }) => {
-                                        if (
-                                          typeof destination === "string" &&
-                                          destination.startsWith("#")
-                                        ) {
-                                          document
-                                            .getElementById(
-                                              destination.substr(1)
-                                            )
-                                            .scrollIntoView({
-                                              behavior: "smooth"
-                                            });
-                                        } else {
-                                          __nextRouter?.push(destination);
-                                        }
-                                      })?.apply(null, [actionArgs]);
-                                    })()
-                                  : undefined;
-                                if (
-                                  $steps["goToTel09262456828"] != null &&
-                                  typeof $steps["goToTel09262456828"] ===
-                                    "object" &&
-                                  typeof $steps["goToTel09262456828"].then ===
-                                    "function"
-                                ) {
-                                  $steps["goToTel09262456828"] =
-                                    await $steps["goToTel09262456828"];
-                                }
-                              }}
-                              role={"img"}
-                            />
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__pjIl3
-                            )}
-                          >
-                            <h3
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3__qkg9Z
-                              )}
-                            >
-                              {"Call Us"}
-                            </h3>
                             <div
                               className={classNames(
                                 projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__kPjLk
-                              )}
-                              onClick={async event => {
-                                const $steps = {};
-
-                                $steps["goToTel09262456828"] = true
-                                  ? (() => {
-                                      const actionArgs = {
-                                        destination: "tel:0926-245-6828"
-                                      };
-                                      return (({ destination }) => {
-                                        if (
-                                          typeof destination === "string" &&
-                                          destination.startsWith("#")
-                                        ) {
-                                          document
-                                            .getElementById(
-                                              destination.substr(1)
-                                            )
-                                            .scrollIntoView({
-                                              behavior: "smooth"
-                                            });
-                                        } else {
-                                          __nextRouter?.push(destination);
-                                        }
-                                      })?.apply(null, [actionArgs]);
-                                    })()
-                                  : undefined;
-                                if (
-                                  $steps["goToTel09262456828"] != null &&
-                                  typeof $steps["goToTel09262456828"] ===
-                                    "object" &&
-                                  typeof $steps["goToTel09262456828"].then ===
-                                    "function"
-                                ) {
-                                  $steps["goToTel09262456828"] =
-                                    await $steps["goToTel09262456828"];
-                                }
-                              }}
-                            >
-                              {"0926.245.6828"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__g4R6W
-                              )}
-                              onClick={async event => {
-                                const $steps = {};
-
-                                $steps["goToTel0443295030"] = true
-                                  ? (() => {
-                                      const actionArgs = {
-                                        destination: "tel:044-329-5030"
-                                      };
-                                      return (({ destination }) => {
-                                        if (
-                                          typeof destination === "string" &&
-                                          destination.startsWith("#")
-                                        ) {
-                                          document
-                                            .getElementById(
-                                              destination.substr(1)
-                                            )
-                                            .scrollIntoView({
-                                              behavior: "smooth"
-                                            });
-                                        } else {
-                                          __nextRouter?.push(destination);
-                                        }
-                                      })?.apply(null, [actionArgs]);
-                                    })()
-                                  : undefined;
-                                if (
-                                  $steps["goToTel0443295030"] != null &&
-                                  typeof $steps["goToTel0443295030"] ===
-                                    "object" &&
-                                  typeof $steps["goToTel0443295030"].then ===
-                                    "function"
-                                ) {
-                                  $steps["goToTel0443295030"] =
-                                    await $steps["goToTel0443295030"];
-                                }
-                              }}
-                            >
-                              {"044.329.5030"}
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__aFQhV
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__grQUq
-                            )}
-                          >
-                            <Icon25Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__bF1
-                              )}
-                              onClick={async event => {
-                                const $steps = {};
-
-                                $steps[
-                                  "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                ] = true
-                                  ? (() => {
-                                      const actionArgs = {
-                                        destination:
-                                          "https://maps.app.goo.gl/eEZMQUVTK5qbx9o8A"
-                                      };
-                                      return (({ destination }) => {
-                                        if (
-                                          typeof destination === "string" &&
-                                          destination.startsWith("#")
-                                        ) {
-                                          document
-                                            .getElementById(
-                                              destination.substr(1)
-                                            )
-                                            .scrollIntoView({
-                                              behavior: "smooth"
-                                            });
-                                        } else {
-                                          __nextRouter?.push(destination);
-                                        }
-                                      })?.apply(null, [actionArgs]);
-                                    })()
-                                  : undefined;
-                                if (
-                                  $steps[
-                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                  ] != null &&
-                                  typeof $steps[
-                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                  ] === "object" &&
-                                  typeof $steps[
-                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                  ].then === "function"
-                                ) {
-                                  $steps[
-                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                  ] =
-                                    await $steps[
-                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                    ];
-                                }
-                              }}
-                              role={"img"}
-                            />
-                          </div>
-                          {false ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__shHue
+                                sty.freeBox__yZ66R
                               )}
                             >
-                              <Icon8Icon
+                              <Icon24Icon
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__mGDq
+                                  sty.svg__urfzp
+                                )}
+                                onClick={async event => {
+                                  const $steps = {};
+
+                                  $steps["goToTel09262456828"] = true
+                                    ? (() => {
+                                        const actionArgs = {
+                                          destination: "tel:0926-245-6828"
+                                        };
+                                        return (({ destination }) => {
+                                          if (
+                                            typeof destination === "string" &&
+                                            destination.startsWith("#")
+                                          ) {
+                                            document
+                                              .getElementById(
+                                                destination.substr(1)
+                                              )
+                                              .scrollIntoView({
+                                                behavior: "smooth"
+                                              });
+                                          } else {
+                                            __nextRouter?.push(destination);
+                                          }
+                                        })?.apply(null, [actionArgs]);
+                                      })()
+                                    : undefined;
+                                  if (
+                                    $steps["goToTel09262456828"] != null &&
+                                    typeof $steps["goToTel09262456828"] ===
+                                      "object" &&
+                                    typeof $steps["goToTel09262456828"].then ===
+                                      "function"
+                                  ) {
+                                    $steps["goToTel09262456828"] =
+                                      await $steps["goToTel09262456828"];
+                                  }
+                                }}
+                                role={"img"}
+                              />
+                            </div>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__pjIl3
+                              )}
+                            >
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__qkg9Z
+                                )}
+                              >
+                                {"Call Us"}
+                              </h3>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__kPjLk
+                                )}
+                                onClick={async event => {
+                                  const $steps = {};
+
+                                  $steps["goToTel09262456828"] = true
+                                    ? (() => {
+                                        const actionArgs = {
+                                          destination: "tel:0926-245-6828"
+                                        };
+                                        return (({ destination }) => {
+                                          if (
+                                            typeof destination === "string" &&
+                                            destination.startsWith("#")
+                                          ) {
+                                            document
+                                              .getElementById(
+                                                destination.substr(1)
+                                              )
+                                              .scrollIntoView({
+                                                behavior: "smooth"
+                                              });
+                                          } else {
+                                            __nextRouter?.push(destination);
+                                          }
+                                        })?.apply(null, [actionArgs]);
+                                      })()
+                                    : undefined;
+                                  if (
+                                    $steps["goToTel09262456828"] != null &&
+                                    typeof $steps["goToTel09262456828"] ===
+                                      "object" &&
+                                    typeof $steps["goToTel09262456828"].then ===
+                                      "function"
+                                  ) {
+                                    $steps["goToTel09262456828"] =
+                                      await $steps["goToTel09262456828"];
+                                  }
+                                }}
+                              >
+                                {"0926.245.6828"}
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__g4R6W
+                                )}
+                                onClick={async event => {
+                                  const $steps = {};
+
+                                  $steps["goToTel0443295030"] = true
+                                    ? (() => {
+                                        const actionArgs = {
+                                          destination: "tel:044-329-5030"
+                                        };
+                                        return (({ destination }) => {
+                                          if (
+                                            typeof destination === "string" &&
+                                            destination.startsWith("#")
+                                          ) {
+                                            document
+                                              .getElementById(
+                                                destination.substr(1)
+                                              )
+                                              .scrollIntoView({
+                                                behavior: "smooth"
+                                              });
+                                          } else {
+                                            __nextRouter?.push(destination);
+                                          }
+                                        })?.apply(null, [actionArgs]);
+                                      })()
+                                    : undefined;
+                                  if (
+                                    $steps["goToTel0443295030"] != null &&
+                                    typeof $steps["goToTel0443295030"] ===
+                                      "object" &&
+                                    typeof $steps["goToTel0443295030"].then ===
+                                      "function"
+                                  ) {
+                                    $steps["goToTel0443295030"] =
+                                      await $steps["goToTel0443295030"];
+                                  }
+                                }}
+                              >
+                                {"044.329.5030"}
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__aFQhV
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__grQUq
+                              )}
+                            >
+                              <Icon25Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__bF1
+                                )}
+                                onClick={async event => {
+                                  const $steps = {};
+
+                                  $steps[
+                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                  ] = true
+                                    ? (() => {
+                                        const actionArgs = {
+                                          destination:
+                                            "https://maps.app.goo.gl/eEZMQUVTK5qbx9o8A"
+                                        };
+                                        return (({ destination }) => {
+                                          if (
+                                            typeof destination === "string" &&
+                                            destination.startsWith("#")
+                                          ) {
+                                            document
+                                              .getElementById(
+                                                destination.substr(1)
+                                              )
+                                              .scrollIntoView({
+                                                behavior: "smooth"
+                                              });
+                                          } else {
+                                            __nextRouter?.push(destination);
+                                          }
+                                        })?.apply(null, [actionArgs]);
+                                      })()
+                                    : undefined;
+                                  if (
+                                    $steps[
+                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                    ] != null &&
+                                    typeof $steps[
+                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                    ] === "object" &&
+                                    typeof $steps[
+                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                    ].then === "function"
+                                  ) {
+                                    $steps[
+                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                    ] =
+                                      await $steps[
+                                        "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                      ];
+                                  }
+                                }}
+                                role={"img"}
+                              />
+                            </div>
+                            {false ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__shHue
+                                )}
+                              >
+                                <Icon8Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__mGDq
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            ) : null}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox___9NlV
+                              )}
+                            >
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3___0Lmnd
+                                )}
+                              >
+                                {"Visit Us"}
+                              </h3>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___3Seaz
+                                )}
+                                onClick={async event => {
+                                  const $steps = {};
+
+                                  $steps[
+                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                  ] = true
+                                    ? (() => {
+                                        const actionArgs = {
+                                          destination:
+                                            "https://maps.app.goo.gl/eEZMQUVTK5qbx9o8A"
+                                        };
+                                        return (({ destination }) => {
+                                          if (
+                                            typeof destination === "string" &&
+                                            destination.startsWith("#")
+                                          ) {
+                                            document
+                                              .getElementById(
+                                                destination.substr(1)
+                                              )
+                                              .scrollIntoView({
+                                                behavior: "smooth"
+                                              });
+                                          } else {
+                                            __nextRouter?.push(destination);
+                                          }
+                                        })?.apply(null, [actionArgs]);
+                                      })()
+                                    : undefined;
+                                  if (
+                                    $steps[
+                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                    ] != null &&
+                                    typeof $steps[
+                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                    ] === "object" &&
+                                    typeof $steps[
+                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                    ].then === "function"
+                                  ) {
+                                    $steps[
+                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                    ] =
+                                      await $steps[
+                                        "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
+                                      ];
+                                  }
+                                }}
+                              >
+                                {"574 Delos Reyes St.\nSan Vicente, Gapan City"}
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__vPbKp
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__p5PvB
+                              )}
+                            >
+                              <Icon26Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__rYpKr
                                 )}
                                 role={"img"}
                               />
                             </div>
-                          ) : null}
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox___9NlV
-                            )}
-                          >
-                            <h3
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3___0Lmnd
-                              )}
-                            >
-                              {"Visit Us"}
-                            </h3>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___3Seaz
-                              )}
-                              onClick={async event => {
-                                const $steps = {};
-
-                                $steps[
-                                  "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                ] = true
-                                  ? (() => {
-                                      const actionArgs = {
-                                        destination:
-                                          "https://maps.app.goo.gl/eEZMQUVTK5qbx9o8A"
-                                      };
-                                      return (({ destination }) => {
-                                        if (
-                                          typeof destination === "string" &&
-                                          destination.startsWith("#")
-                                        ) {
-                                          document
-                                            .getElementById(
-                                              destination.substr(1)
-                                            )
-                                            .scrollIntoView({
-                                              behavior: "smooth"
-                                            });
-                                        } else {
-                                          __nextRouter?.push(destination);
-                                        }
-                                      })?.apply(null, [actionArgs]);
-                                    })()
-                                  : undefined;
-                                if (
-                                  $steps[
-                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                  ] != null &&
-                                  typeof $steps[
-                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                  ] === "object" &&
-                                  typeof $steps[
-                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                  ].then === "function"
-                                ) {
-                                  $steps[
-                                    "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                  ] =
-                                    await $steps[
-                                      "goToHttpsMapsAppGooGlEEzmquvtk5Qbx9O8A"
-                                    ];
-                                }
-                              }}
-                            >
-                              {"574 Delos Reyes St.\nSan Vicente, Gapan City"}
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__vPbKp
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__p5PvB
-                            )}
-                          >
-                            <Icon26Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__rYpKr
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          {false ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__zU6Px
-                              )}
-                            >
-                              <Icon8Icon
+                            {false ? (
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__wR1Li
+                                  sty.freeBox__zU6Px
                                 )}
-                                role={"img"}
-                              />
-                            </div>
-                          ) : null}
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__mQrTh
-                            )}
-                          >
-                            <h3
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3__ohfip
-                              )}
-                            >
-                              {"Social Media"}
-                            </h3>
+                              >
+                                <Icon8Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__wR1Li
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            ) : null}
                             <div
                               className={classNames(
                                 projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__f3Qau
+                                sty.freeBox__mQrTh
                               )}
-                              onClick={async event => {
-                                const $steps = {};
+                            >
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__ohfip
+                                )}
+                              >
+                                {"Social Media"}
+                              </h3>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__f3Qau
+                                )}
+                                onClick={async event => {
+                                  const $steps = {};
 
-                                $steps[
-                                  "goToHttpsWwwFacebookComKinectacademyph"
-                                ] = true
-                                  ? (() => {
-                                      const actionArgs = {
-                                        destination:
-                                          "https://www.facebook.com/kinectacademyph"
-                                      };
-                                      return (({ destination }) => {
-                                        if (
-                                          typeof destination === "string" &&
-                                          destination.startsWith("#")
-                                        ) {
-                                          document
-                                            .getElementById(
-                                              destination.substr(1)
-                                            )
-                                            .scrollIntoView({
-                                              behavior: "smooth"
-                                            });
-                                        } else {
-                                          __nextRouter?.push(destination);
-                                        }
-                                      })?.apply(null, [actionArgs]);
-                                    })()
-                                  : undefined;
-                                if (
                                   $steps[
                                     "goToHttpsWwwFacebookComKinectacademyph"
-                                  ] != null &&
-                                  typeof $steps[
-                                    "goToHttpsWwwFacebookComKinectacademyph"
-                                  ] === "object" &&
-                                  typeof $steps[
-                                    "goToHttpsWwwFacebookComKinectacademyph"
-                                  ].then === "function"
-                                ) {
-                                  $steps[
-                                    "goToHttpsWwwFacebookComKinectacademyph"
-                                  ] =
-                                    await $steps[
+                                  ] = true
+                                    ? (() => {
+                                        const actionArgs = {
+                                          destination:
+                                            "https://www.facebook.com/kinectacademyph"
+                                        };
+                                        return (({ destination }) => {
+                                          if (
+                                            typeof destination === "string" &&
+                                            destination.startsWith("#")
+                                          ) {
+                                            document
+                                              .getElementById(
+                                                destination.substr(1)
+                                              )
+                                              .scrollIntoView({
+                                                behavior: "smooth"
+                                              });
+                                          } else {
+                                            __nextRouter?.push(destination);
+                                          }
+                                        })?.apply(null, [actionArgs]);
+                                      })()
+                                    : undefined;
+                                  if (
+                                    $steps[
                                       "goToHttpsWwwFacebookComKinectacademyph"
-                                    ];
-                                }
-                              }}
-                            >
-                              {"facebook.com/kinectacademyph"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__kB1Ei
-                              )}
-                              onClick={async event => {
-                                const $steps = {};
+                                    ] != null &&
+                                    typeof $steps[
+                                      "goToHttpsWwwFacebookComKinectacademyph"
+                                    ] === "object" &&
+                                    typeof $steps[
+                                      "goToHttpsWwwFacebookComKinectacademyph"
+                                    ].then === "function"
+                                  ) {
+                                    $steps[
+                                      "goToHttpsWwwFacebookComKinectacademyph"
+                                    ] =
+                                      await $steps[
+                                        "goToHttpsWwwFacebookComKinectacademyph"
+                                      ];
+                                  }
+                                }}
+                              >
+                                {"facebook.com/kinectacademyph"}
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__kB1Ei
+                                )}
+                                onClick={async event => {
+                                  const $steps = {};
 
-                                $steps["goToHttpsWwwYoutubeComKinectacademy"] =
-                                  true
+                                  $steps[
+                                    "goToHttpsWwwYoutubeComKinectacademy"
+                                  ] = true
                                     ? (() => {
                                         const actionArgs = {
                                           destination:
@@ -1061,36 +1074,37 @@ function PlasmicContactUs__RenderFunc(props: {
                                         })?.apply(null, [actionArgs]);
                                       })()
                                     : undefined;
-                                if (
-                                  $steps[
-                                    "goToHttpsWwwYoutubeComKinectacademy"
-                                  ] != null &&
-                                  typeof $steps[
-                                    "goToHttpsWwwYoutubeComKinectacademy"
-                                  ] === "object" &&
-                                  typeof $steps[
-                                    "goToHttpsWwwYoutubeComKinectacademy"
-                                  ].then === "function"
-                                ) {
-                                  $steps[
-                                    "goToHttpsWwwYoutubeComKinectacademy"
-                                  ] =
-                                    await $steps[
+                                  if (
+                                    $steps[
                                       "goToHttpsWwwYoutubeComKinectacademy"
-                                    ];
-                                }
-                              }}
-                            >
-                              {"youtube.com/@kinectacademy"}
+                                    ] != null &&
+                                    typeof $steps[
+                                      "goToHttpsWwwYoutubeComKinectacademy"
+                                    ] === "object" &&
+                                    typeof $steps[
+                                      "goToHttpsWwwYoutubeComKinectacademy"
+                                    ].then === "function"
+                                  ) {
+                                    $steps[
+                                      "goToHttpsWwwYoutubeComKinectacademy"
+                                    ] =
+                                      await $steps[
+                                        "goToHttpsWwwYoutubeComKinectacademy"
+                                      ];
+                                  }
+                                }}
+                              >
+                                {"youtube.com/@kinectacademy"}
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </section>
+                  </section>
+                </div>
               </div>
-            </div>
+            </Reveal>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__fZyzA)}>
             <div className={classNames(projectcss.all, sty.freeBox__pIhFd)}>
@@ -1588,6 +1602,7 @@ const PlasmicDescendants = {
     "foreground2",
     "h1",
     "registerLink",
+    "reveal",
     "h2",
     "section",
     "foreground"
@@ -1596,6 +1611,7 @@ const PlasmicDescendants = {
   foreground2: ["foreground2", "h1", "registerLink"],
   h1: ["h1"],
   registerLink: ["registerLink"],
+  reveal: ["reveal", "h2", "section", "foreground"],
   h2: ["h2"],
   section: ["section", "foreground"],
   foreground: ["foreground"]
@@ -1609,6 +1625,7 @@ type NodeDefaultElementType = {
   foreground2: "div";
   h1: "h1";
   registerLink: typeof Button2;
+  reveal: typeof Reveal;
   h2: "h2";
   section: "section";
   foreground: "div";
@@ -1680,6 +1697,7 @@ export const PlasmicContactUs = Object.assign(
     foreground2: makeNodeComponent("foreground2"),
     h1: makeNodeComponent("h1"),
     registerLink: makeNodeComponent("registerLink"),
+    reveal: makeNodeComponent("reveal"),
     h2: makeNodeComponent("h2"),
     section: makeNodeComponent("section"),
     foreground: makeNodeComponent("foreground"),

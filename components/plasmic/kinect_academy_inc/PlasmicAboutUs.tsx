@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Button2 from "../../Button2"; // plasmic-import: 08WU9IokPT6n/component
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import Button from "../../Button"; // plasmic-import: jt2j7CHc7KBU/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/styleTokensProvider
@@ -96,6 +97,7 @@ export type PlasmicAboutUs__OverridesType = {
   root?: Flex__<"div">;
   foreground2?: Flex__<"div">;
   registerLink?: Flex__<typeof Button2>;
+  reveal?: Flex__<typeof Reveal>;
   foreground?: Flex__<"div">;
   foreground3?: Flex__<"div">;
 };
@@ -541,223 +543,246 @@ function PlasmicAboutUs__RenderFunc(props: {
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__twUc)}>
-            <div className={classNames(projectcss.all, sty.freeBox__bfmLl)}>
-              <div className={classNames(projectcss.all, sty.freeBox__l2OX)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__rZgxV
-                  )}
-                >
-                  {"About Us"}
-                </div>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__f94
-                  )}
-                >
-                  {"Who is Kinect Academy ?"}
-                </h2>
-                <section
-                  className={classNames(projectcss.all, sty.section__phMtY)}
-                >
+            <Reveal
+              data-plasmic-name={"reveal"}
+              data-plasmic-override={overrides.reveal}
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal)}
+              triggerOnce={true}
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__ckSaZ)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={"https://placekitten.com/300/200"}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox__bfmLl)}>
+                <div className={classNames(projectcss.all, sty.freeBox__l2OX)}>
                   <div
-                    data-plasmic-name={"foreground"}
-                    data-plasmic-override={overrides.foreground}
-                    className={classNames(projectcss.all, sty.foreground)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__rZgxV
+                    )}
+                  >
+                    {"About Us"}
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__f94
+                    )}
+                  >
+                    {"Who is Kinect Academy ?"}
+                  </h2>
+                  <section
+                    className={classNames(projectcss.all, sty.section__phMtY)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__y6S8)}
+                      data-plasmic-name={"foreground"}
+                      data-plasmic-override={overrides.foreground}
+                      className={classNames(projectcss.all, sty.foreground)}
                     >
-                      <h1
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h1,
-                          projectcss.__wab_text,
-                          sty.h1__sgxzz
-                        )}
-                      >
-                        {"Our Journey & Purpose"}
-                      </h1>
                       <div
                         className={classNames(
                           projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__zFd
+                          sty.freeBox__y6S8
                         )}
                       >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"The Heart of Our Institution\r"}
-                          </span>
-                          <React.Fragment>
-                            {
-                              "\n\r\nKinect Academy Inc. is a non-stock, non-profit private educational institution rooted in Gapan City, Nueva Ecija. We believe that education is more than just a profit-driven endeavor; it is a mission to touch lives and prepare the youth for a purposeful future.\n\n\r\n"
-                            }
-                          </React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Born from a National Vision\r"}
-                          </span>
-                          <React.Fragment>
-                            {
-                              "\n\r\nIn 2014, as the Philippines embarked on the historic K-to-12 transition, Kinect Academy was founded with a clear intent: to support the nation\u2019s youth through this major educational shift.\r\n\r\nWhat started in 2016 as a specialized Senior High School has since evolved into a center for higher learning. In 2020, we officially partnered with the Commission on Higher Education (CHED) to offer college degrees that bridge the gap between classroom learning and professional careers.\n\n\r\n"
-                            }
-                          </React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Excellence, Innovation, and Character\r"}
-                          </span>
-                          <React.Fragment>
-                            {
-                              "\n\r\nAt Kinect, we provide more than just diplomas. We equip our students with a dual-edged advantage:\r\n\r\n    Practical Expertise: Our curriculum is designed to provide real-world skills through updated courses like BS in Office Administration (BSOA) and Bachelor of Technical Vocational Teacher Education (BTVTEd).\r\n\r\n    Godly Character: Beyond academic intelligence, we instill the morals and standards vital for a successful life. We strive to nurture responsible, God-fearing individuals who lead with integrity."
-                            }
-                          </React.Fragment>
-                        </React.Fragment>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__b0UiW
-                        )}
-                      >
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1__sgxzz
+                          )}
+                        >
+                          {"Our Journey & Purpose"}
+                        </h1>
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__ye56M
+                            projectcss.__wab_text,
+                            sty.text__zFd
                           )}
                         >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__qx0M
-                            )}
-                          >
-                            <Icon15Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__jfOW
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__xGshd
-                            )}
-                          >
-                            <h3
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3__mZnE
-                              )}
-                            >
-                              {"Our Mission"}
-                            </h3>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___2AhGo
-                              )}
-                            >
-                              {
-                                "Our Mission is to educate and enrich the knowledge of every individual through the discovering and enhancing of their skills, while building Godly character as their core foundation."
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
                               }
-                            </div>
-                          </div>
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"The Heart of Our Institution\r"}
+                            </span>
+                            <React.Fragment>
+                              {
+                                "\n\r\nKinect Academy Inc. is a non-stock, non-profit private educational institution rooted in Gapan City, Nueva Ecija. We believe that education is more than just a profit-driven endeavor; it is a mission to touch lives and prepare the youth for a purposeful future.\n\n\r\n"
+                              }
+                            </React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"Born from a National Vision\r"}
+                            </span>
+                            <React.Fragment>
+                              {
+                                "\n\r\nIn 2014, as the Philippines embarked on the historic K-to-12 transition, Kinect Academy was founded with a clear intent: to support the nation\u2019s youth through this major educational shift.\r\n\r\nWhat started in 2016 as a specialized Senior High School has since evolved into a center for higher learning. In 2020, we officially partnered with the Commission on Higher Education (CHED) to offer college degrees that bridge the gap between classroom learning and professional careers.\n\n\r\n"
+                              }
+                            </React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"Excellence, Innovation, and Character\r"}
+                            </span>
+                            <React.Fragment>
+                              {
+                                "\n\r\nAt Kinect, we provide more than just diplomas. We equip our students with a dual-edged advantage:\r\n\r\n    Practical Expertise: Our curriculum is designed to provide real-world skills through updated courses like BS in Office Administration (BSOA) and Bachelor of Technical Vocational Teacher Education (BTVTEd).\r\n\r\n    Godly Character: Beyond academic intelligence, we instill the morals and standards vital for a successful life. We strive to nurture responsible, God-fearing individuals who lead with integrity."
+                              }
+                            </React.Fragment>
+                          </React.Fragment>
                         </div>
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__tkLh
+                            sty.freeBox__b0UiW
                           )}
                         >
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__iiiRq
+                              sty.freeBox__ye56M
                             )}
                           >
-                            <Icon14Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___7Ccl9
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          {false ? (
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox__ybw1E
+                                sty.freeBox__qx0M
                               )}
                             >
-                              <Icon8Icon
+                              <Icon15Icon
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__ppSr
+                                  sty.svg__jfOW
                                 )}
                                 role={"img"}
                               />
                             </div>
-                          ) : null}
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox___6Lr9T
-                            )}
-                          >
-                            <h3
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h3,
-                                projectcss.__wab_text,
-                                sty.h3__ykATk
-                              )}
-                            >
-                              {"Our Vision"}
-                            </h3>
                             <div
                               className={classNames(
                                 projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__go70Z
+                                sty.freeBox__xGshd
                               )}
                             >
-                              {
-                                "Our Vision is to become an influential educational institution, known for actively providing high academic standards while instilling Godly Character and Values that will make a difference in our society."
-                              }
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__mZnE
+                                )}
+                              >
+                                {"Our Mission"}
+                              </h3>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___2AhGo
+                                )}
+                              >
+                                {
+                                  "Our Mission is to educate and enrich the knowledge of every individual through the discovering and enhancing of their skills, while building Godly character as their core foundation."
+                                }
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__tkLh
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__iiiRq
+                              )}
+                            >
+                              <Icon14Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg___7Ccl9
+                                )}
+                                role={"img"}
+                              />
+                            </div>
+                            {false ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__ybw1E
+                                )}
+                              >
+                                <Icon8Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__ppSr
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            ) : null}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox___6Lr9T
+                              )}
+                            >
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__ykATk
+                                )}
+                              >
+                                {"Our Vision"}
+                              </h3>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__go70Z
+                                )}
+                              >
+                                {
+                                  "Our Vision is to become an influential educational institution, known for actively providing high academic standards while instilling Godly Character and Values that will make a difference in our society."
+                                }
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </section>
+                  </section>
+                </div>
               </div>
-            </div>
+            </Reveal>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___9WJrz)}>
             <div className={classNames(projectcss.all, sty.freeBox__uZUzq)}>
@@ -1572,9 +1597,17 @@ function PlasmicAboutUs__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "foreground2", "registerLink", "foreground", "foreground3"],
+  root: [
+    "root",
+    "foreground2",
+    "registerLink",
+    "reveal",
+    "foreground",
+    "foreground3"
+  ],
   foreground2: ["foreground2", "registerLink"],
   registerLink: ["registerLink"],
+  reveal: ["reveal", "foreground"],
   foreground: ["foreground"],
   foreground3: ["foreground3"]
 } as const;
@@ -1585,6 +1618,7 @@ type NodeDefaultElementType = {
   root: "div";
   foreground2: "div";
   registerLink: typeof Button2;
+  reveal: typeof Reveal;
   foreground: "div";
   foreground3: "div";
 };
@@ -1653,6 +1687,7 @@ export const PlasmicAboutUs = Object.assign(
     // Helper components rendering sub-elements
     foreground2: makeNodeComponent("foreground2"),
     registerLink: makeNodeComponent("registerLink"),
+    reveal: makeNodeComponent("reveal"),
     foreground: makeNodeComponent("foreground"),
     foreground3: makeNodeComponent("foreground3"),
 
