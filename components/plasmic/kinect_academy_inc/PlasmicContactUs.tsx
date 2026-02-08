@@ -1092,13 +1092,13 @@ function PlasmicContactUs__RenderFunc(props: {
               </div>
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__fBaji)}>
-            <div className={classNames(projectcss.all, sty.freeBox__jv6B0)}>
-              <div className={classNames(projectcss.all, sty.freeBox__jUkdN)}>
-                <div className={classNames(projectcss.all, sty.freeBox__c1SoG)}>
+          <div className={classNames(projectcss.all, sty.freeBox__fZyzA)}>
+            <div className={classNames(projectcss.all, sty.freeBox__pIhFd)}>
+              <div className={classNames(projectcss.all, sty.freeBox___4Urv7)}>
+                <div className={classNames(projectcss.all, sty.freeBox__kRfE)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__eYizN)}
+                    className={classNames(sty.img__dzjSc)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -1114,22 +1114,22 @@ function PlasmicContactUs__RenderFunc(props: {
                   />
 
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__vrGs2)}
+                    className={classNames(projectcss.all, sty.freeBox___4V2QN)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__vu7Ba
+                        sty.text__s0So
                       )}
                     >
                       {"Connect with us"}
                     </div>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__zyxi9)}
+                      className={classNames(projectcss.all, sty.freeBox__m5Jt)}
                     >
                       <Icon19Icon
-                        className={classNames(projectcss.all, sty.svg__yWIs)}
+                        className={classNames(projectcss.all, sty.svg__aaHmO)}
                         onClick={async event => {
                           const $steps = {};
 
@@ -1174,7 +1174,7 @@ function PlasmicContactUs__RenderFunc(props: {
                       />
 
                       <Icon17Icon
-                        className={classNames(projectcss.all, sty.svg__sXB6)}
+                        className={classNames(projectcss.all, sty.svg__pBeDu)}
                         onClick={async event => {
                           const $steps = {};
 
@@ -1212,7 +1212,7 @@ function PlasmicContactUs__RenderFunc(props: {
                       />
 
                       <Icon20Icon
-                        className={classNames(projectcss.all, sty.svg__nEksX)}
+                        className={classNames(projectcss.all, sty.svg__u7Dn2)}
                         onClick={async event => {
                           const $steps = {};
 
@@ -1261,15 +1261,13 @@ function PlasmicContactUs__RenderFunc(props: {
                     </div>
                   </div>
                 </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___1Hynn)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__i1ThV)}>
                   <h3
                     className={classNames(
                       projectcss.all,
                       projectcss.h3,
                       projectcss.__wab_text,
-                      sty.h3__yaUib
+                      sty.h3__zI5K7
                     )}
                   >
                     {"Navigation"}
@@ -1278,14 +1276,14 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__w0USe
+                      sty.link__ehq7Q
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__dHa2X)}
+                        className={classNames(projectcss.all, sty.svg__cq9SW)}
                         role={"img"}
                       />
                     ) : null}
@@ -1293,14 +1291,14 @@ function PlasmicContactUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__yIooG
+                        sty.text___1CSuo
                       )}
                     >
                       {"Nav link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__bb0Vq)}
+                        className={classNames(projectcss.all, sty.svg__wAti5)}
                         role={"img"}
                       />
                     ) : null}
@@ -1309,14 +1307,14 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__pAcDe
+                      sty.link__bjt6I
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg___0OJwc)}
+                        className={classNames(projectcss.all, sty.svg__bCo)}
                         role={"img"}
                       />
                     ) : null}
@@ -1324,14 +1322,14 @@ function PlasmicContactUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text___0FFm
+                        sty.text__xhuzH
                       )}
                     >
                       {"Nav link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__fjvFb)}
+                        className={classNames(projectcss.all, sty.svg__s3EoQ)}
                         role={"img"}
                       />
                     ) : null}
@@ -1340,14 +1338,14 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__qnXuP
+                      sty.link__sV53X
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__uFvSf)}
+                        className={classNames(projectcss.all, sty.svg__hIPog)}
                         role={"img"}
                       />
                     ) : null}
@@ -1355,26 +1353,26 @@ function PlasmicContactUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__gWjy
+                        sty.text__d8ZlB
                       )}
                     >
                       {"Nav link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg___9U8Jj)}
+                        className={classNames(projectcss.all, sty.svg__v7D22)}
                         role={"img"}
                       />
                     ) : null}
                   </PlasmicLink__>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__nHayR)}>
+                <div className={classNames(projectcss.all, sty.freeBox___0WaY)}>
                   <h3
                     className={classNames(
                       projectcss.all,
                       projectcss.h3,
                       projectcss.__wab_text,
-                      sty.h3___7QN17
+                      sty.h3___8Ih7A
                     )}
                   >
                     {"Support"}
@@ -1383,14 +1381,14 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__o1Dro
+                      sty.link__yjQ9J
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__uMdoO)}
+                        className={classNames(projectcss.all, sty.svg___26WDz)}
                         role={"img"}
                       />
                     ) : null}
@@ -1398,14 +1396,14 @@ function PlasmicContactUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text___7WjRr
+                        sty.text__q08B
                       )}
                     >
                       {"Link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__bFkVb)}
+                        className={classNames(projectcss.all, sty.svg__x7FCx)}
                         role={"img"}
                       />
                     ) : null}
@@ -1414,14 +1412,14 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__wshCg
+                      sty.link___4ZaBq
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__wjKly)}
+                        className={classNames(projectcss.all, sty.svg__jkNli)}
                         role={"img"}
                       />
                     ) : null}
@@ -1429,14 +1427,14 @@ function PlasmicContactUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__zogee
+                        sty.text__wnLyq
                       )}
                     >
                       {"FAQs"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__nkNhP)}
+                        className={classNames(projectcss.all, sty.svg__s0Ha5)}
                         role={"img"}
                       />
                     ) : null}
@@ -1445,14 +1443,14 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__kqWpP
+                      sty.link__wIc61
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__gsdt4)}
+                        className={classNames(projectcss.all, sty.svg__vU1Zk)}
                         role={"img"}
                       />
                     ) : null}
@@ -1460,14 +1458,14 @@ function PlasmicContactUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text___8QMt
+                        sty.text__kPqby
                       )}
                     >
                       {"Status"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__znEjI)}
+                        className={classNames(projectcss.all, sty.svg__nJiL)}
                         role={"img"}
                       />
                     ) : null}
@@ -1476,14 +1474,14 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__mlF4J
+                      sty.link__a0Nne
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__bpfs1)}
+                        className={classNames(projectcss.all, sty.svg__kDbH7)}
                         role={"img"}
                       />
                     ) : null}
@@ -1491,26 +1489,26 @@ function PlasmicContactUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__x6T2
+                        sty.text__tlrtD
                       )}
                     >
                       {"Link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__x4NJx)}
+                        className={classNames(projectcss.all, sty.svg__tKjUc)}
                         role={"img"}
                       />
                     ) : null}
                   </PlasmicLink__>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__t9Ggf)}>
+                <div className={classNames(projectcss.all, sty.freeBox__zsfSy)}>
                   <h3
                     className={classNames(
                       projectcss.all,
                       projectcss.h3,
                       projectcss.__wab_text,
-                      sty.h3__qqDt5
+                      sty.h3___7SOvi
                     )}
                   >
                     {"Address"}
@@ -1519,7 +1517,7 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__qpChO
+                      sty.text__s3Rn6
                     )}
                   >
                     {"574 Delos Reyes St.\nSan Vicente, Gapan City"}
@@ -1528,7 +1526,7 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___2YsYr
+                      sty.text__wy2Py
                     )}
                   >
                     {"Phone:  0926.245.6828"}
@@ -1537,7 +1535,7 @@ function PlasmicContactUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__xxuF5
+                      sty.text__qeBkI
                     )}
                   >
                     {"Email:  kinectacademy@gmail.com"}
@@ -1548,7 +1546,7 @@ function PlasmicContactUs__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__hqDaF
+                  sty.text___2EFJw
                 )}
               >
                 <React.Fragment>
@@ -1564,7 +1562,7 @@ function PlasmicContactUs__RenderFunc(props: {
                         projectcss.a,
                         projectcss.__wab_text,
                         projectcss.plasmic_default__inline,
-                        sty.link__bmAy4
+                        sty.link___6ELqW
                       )}
                       component={Link}
                       platform={"nextjs"}

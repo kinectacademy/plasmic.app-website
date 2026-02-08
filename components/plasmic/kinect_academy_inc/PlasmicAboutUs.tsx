@@ -1079,15 +1079,13 @@ function PlasmicAboutUs__RenderFunc(props: {
               </div>
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__biplG)}>
-            <div className={classNames(projectcss.all, sty.freeBox__kcaF)}>
-              <div className={classNames(projectcss.all, sty.freeBox__mArV)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___3Cu4K)}
-                >
+          <div className={classNames(projectcss.all, sty.freeBox___2OaBb)}>
+            <div className={classNames(projectcss.all, sty.freeBox__vt8K)}>
+              <div className={classNames(projectcss.all, sty.freeBox__bdxWp)}>
+                <div className={classNames(projectcss.all, sty.freeBox__koFiJ)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__aa6XZ)}
+                    className={classNames(sty.img__qkqSd)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -1103,22 +1101,25 @@ function PlasmicAboutUs__RenderFunc(props: {
                   />
 
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__sswhA)}
+                    className={classNames(projectcss.all, sty.freeBox__exm18)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__xrt1D
+                        sty.text__xXqD
                       )}
                     >
                       {"Connect with us"}
                     </div>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__uqmIf)}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___731Va
+                      )}
                     >
                       <Icon19Icon
-                        className={classNames(projectcss.all, sty.svg__fpVzx)}
+                        className={classNames(projectcss.all, sty.svg__hgIl7)}
                         onClick={async event => {
                           const $steps = {};
 
@@ -1163,7 +1164,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       />
 
                       <Icon17Icon
-                        className={classNames(projectcss.all, sty.svg__tKuK7)}
+                        className={classNames(projectcss.all, sty.svg__uCxm2)}
                         onClick={async event => {
                           const $steps = {};
 
@@ -1201,7 +1202,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       />
 
                       <Icon20Icon
-                        className={classNames(projectcss.all, sty.svg__rDXw0)}
+                        className={classNames(projectcss.all, sty.svg___0PsC)}
                         onClick={async event => {
                           const $steps = {};
 
@@ -1250,13 +1251,13 @@ function PlasmicAboutUs__RenderFunc(props: {
                     </div>
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__es6Cp)}>
+                <div className={classNames(projectcss.all, sty.freeBox__pyYqz)}>
                   <h3
                     className={classNames(
                       projectcss.all,
                       projectcss.h3,
                       projectcss.__wab_text,
-                      sty.h3__meg2O
+                      sty.h3__d5BgN
                     )}
                   >
                     {"Navigation"}
@@ -1265,14 +1266,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__bxelG
+                      sty.link__yl4De
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__nVGg)}
+                        className={classNames(projectcss.all, sty.svg__fuxdw)}
                         role={"img"}
                       />
                     ) : null}
@@ -1280,14 +1281,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text___9WLcB
+                        sty.text___87DeK
                       )}
                     >
                       {"Nav link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__avHqT)}
+                        className={classNames(projectcss.all, sty.svg__kLgwx)}
                         role={"img"}
                       />
                     ) : null}
@@ -1296,14 +1297,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__p94Yr
+                      sty.link__lbsoX
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__njAna)}
+                        className={classNames(projectcss.all, sty.svg___1CgU7)}
                         role={"img"}
                       />
                     ) : null}
@@ -1311,14 +1312,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__j46L
+                        sty.text__piavm
                       )}
                     >
                       {"Nav link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__qkfcE)}
+                        className={classNames(projectcss.all, sty.svg__duLrd)}
                         role={"img"}
                       />
                     ) : null}
@@ -1327,14 +1328,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__pmle3
+                      sty.link__fsZ4H
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__kysnU)}
+                        className={classNames(projectcss.all, sty.svg__kzOoF)}
                         role={"img"}
                       />
                     ) : null}
@@ -1342,28 +1343,26 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__cmUc8
+                        sty.text__rK6V
                       )}
                     >
                       {"Nav link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__bUh9F)}
+                        className={classNames(projectcss.all, sty.svg__exbWu)}
                         role={"img"}
                       />
                     ) : null}
                   </PlasmicLink__>
                 </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___56MNs)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox___9NV8)}>
                   <h3
                     className={classNames(
                       projectcss.all,
                       projectcss.h3,
                       projectcss.__wab_text,
-                      sty.h3__wFdYg
+                      sty.h3___5V5Pr
                     )}
                   >
                     {"Support"}
@@ -1372,14 +1371,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link___2Twsv
+                      sty.link__adjV8
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__ncQsw)}
+                        className={classNames(projectcss.all, sty.svg__sbVv9)}
                         role={"img"}
                       />
                     ) : null}
@@ -1387,14 +1386,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__etzA
+                        sty.text__fuain
                       )}
                     >
                       {"Link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__t9Ffy)}
+                        className={classNames(projectcss.all, sty.svg__dFr4E)}
                         role={"img"}
                       />
                     ) : null}
@@ -1403,14 +1402,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__vjCti
+                      sty.link__vilb7
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__cZEnj)}
+                        className={classNames(projectcss.all, sty.svg__cJvhH)}
                         role={"img"}
                       />
                     ) : null}
@@ -1418,14 +1417,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__n5Hj2
+                        sty.text__oakwV
                       )}
                     >
                       {"FAQs"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__dg2Dh)}
+                        className={classNames(projectcss.all, sty.svg___7OeK)}
                         role={"img"}
                       />
                     ) : null}
@@ -1434,14 +1433,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link___7Je0O
+                      sty.link__q1SSt
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__j20Lt)}
+                        className={classNames(projectcss.all, sty.svg__kve1M)}
                         role={"img"}
                       />
                     ) : null}
@@ -1449,14 +1448,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__g5VDo
+                        sty.text__etBeY
                       )}
                     >
                       {"Status"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__rdjZj)}
+                        className={classNames(projectcss.all, sty.svg__zPoE)}
                         role={"img"}
                       />
                     ) : null}
@@ -1465,14 +1464,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link___0Dwa7
+                      sty.link___44W4C
                     )}
                     component={Link}
                     platform={"nextjs"}
                   >
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__yq0Al)}
+                        className={classNames(projectcss.all, sty.svg__zGl86)}
                         role={"img"}
                       />
                     ) : null}
@@ -1480,26 +1479,26 @@ function PlasmicAboutUs__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__kkIaq
+                        sty.text__mnJhu
                       )}
                     >
                       {"Link"}
                     </div>
                     {false ? (
                       <IconIcon
-                        className={classNames(projectcss.all, sty.svg__uOkUc)}
+                        className={classNames(projectcss.all, sty.svg__wgmsF)}
                         role={"img"}
                       />
                     ) : null}
                   </PlasmicLink__>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__flUwq)}>
+                <div className={classNames(projectcss.all, sty.freeBox__r44Z)}>
                   <h3
                     className={classNames(
                       projectcss.all,
                       projectcss.h3,
                       projectcss.__wab_text,
-                      sty.h3___7QCMi
+                      sty.h3__xVsEr
                     )}
                   >
                     {"Address"}
@@ -1508,7 +1507,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___3A1Yk
+                      sty.text__ji9H7
                     )}
                   >
                     {"574 Delos Reyes St.\nSan Vicente, Gapan City"}
@@ -1517,7 +1516,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___51Zg4
+                      sty.text__i7Yp
                     )}
                   >
                     {"Phone:  0926.245.6828"}
@@ -1526,7 +1525,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__nkY1
+                      sty.text__gj6Yp
                     )}
                   >
                     {"Email:  kinectacademy@gmail.com"}
@@ -1537,7 +1536,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__qtbsX
+                  sty.text__qhxh6
                 )}
               >
                 <React.Fragment>
@@ -1553,7 +1552,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                         projectcss.a,
                         projectcss.__wab_text,
                         projectcss.plasmic_default__inline,
-                        sty.link__os6K3
+                        sty.link__p1MBu
                       )}
                       component={Link}
                       platform={"nextjs"}

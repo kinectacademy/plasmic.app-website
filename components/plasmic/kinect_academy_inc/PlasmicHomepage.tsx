@@ -59,8 +59,9 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import Button2 from "../../Button2"; // plasmic-import: 08WU9IokPT6n/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
+import Tilt from "@plasmicpkgs/react-parallax-tilt";
+import Button2 from "../../Button2"; // plasmic-import: 08WU9IokPT6n/component
 import Button from "../../Button"; // plasmic-import: jt2j7CHc7KBU/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: qrgzy9hj6GGeC381EGfELp/styleTokensProvider
@@ -98,8 +99,8 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   foreground2?: Flex__<"div">;
   h1?: Flex__<"h1">;
+  tilt?: Flex__<typeof Tilt>;
   registerLink?: Flex__<typeof Button2>;
-  reveal?: Flex__<typeof Reveal>;
   foreground?: Flex__<"div">;
   foreground3?: Flex__<"div">;
 };
@@ -441,107 +442,121 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-override={overrides.foreground2}
               className={classNames(projectcss.all, sty.foreground2)}
             >
-              <div className={classNames(projectcss.all, sty.freeBox__yRIu)}>
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{"Join the "}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "var(--token-Dd6gyjIVe7XT)" }}
-                    >
-                      {"Kinect"}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#51D1FF" }}
-                    >
-                      {" Academy"}
-                    </span>
-                    <React.Fragment>{" Family!"}</React.Fragment>
-                  </React.Fragment>
-                </h1>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___4ItLm
-                  )}
-                >
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "var(--token-Dd6gyjIVe7XT)" }}
-                    >
-                      {"SENIOR HIGH SCHOOL | GAPAN CITY"}
-                    </span>
-                  </React.Fragment>
-                </div>
-                <Button2
-                  data-plasmic-name={"registerLink"}
-                  data-plasmic-override={overrides.registerLink}
-                  className={classNames("__wab_instance", sty.registerLink)}
-                  disabled={false}
-                  end={
-                    <Icon6Icon
-                      className={classNames(projectcss.all, sty.svg__mztV2)}
-                      role={"img"}
-                    />
-                  }
-                  iconEnd={true}
-                  label={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ccrkL
-                      )}
-                    >
-                      {"REGISTER NOW"}
-                    </div>
-                  }
-                  linkTo={"https://forms.gle/rse2ggxXWFjCuugY9"}
-                  onClick={async event => {
-                    const $steps = {};
+              <Reveal
+                cascade={true}
+                className={classNames("__wab_instance", sty.reveal___87LuJ)}
+                triggerOnce={true}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__yRIu)}>
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{"Join the "}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "var(--token-Dd6gyjIVe7XT)" }}
+                      >
+                        {"Kinect"}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#51D1FF" }}
+                      >
+                        {" Academy"}
+                      </span>
+                      <React.Fragment>{" Family!"}</React.Fragment>
+                    </React.Fragment>
+                  </h1>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___4ItLm
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "var(--token-Dd6gyjIVe7XT)" }}
+                      >
+                        {"SENIOR HIGH SCHOOL | GAPAN CITY"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+                  <Tilt
+                    data-plasmic-name={"tilt"}
+                    data-plasmic-override={overrides.tilt}
+                    className={classNames("__wab_instance", sty.tilt)}
+                  >
+                    <Button2
+                      data-plasmic-name={"registerLink"}
+                      data-plasmic-override={overrides.registerLink}
+                      className={classNames("__wab_instance", sty.registerLink)}
+                      disabled={false}
+                      end={
+                        <Icon6Icon
+                          className={classNames(projectcss.all, sty.svg__mztV2)}
+                          role={"img"}
+                        />
+                      }
+                      iconEnd={true}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__ccrkL
+                          )}
+                        >
+                          {"REGISTER NOW"}
+                        </div>
+                      }
+                      linkTo={"https://forms.gle/rse2ggxXWFjCuugY9"}
+                      onClick={async event => {
+                        const $steps = {};
 
-                    $steps["runElementAction"] = true
-                      ? (() => {
-                          const actionArgs = {};
-                          return (({ tplRef, action, args }) => {
-                            return $refs?.[tplRef]?.[action]?.(...(args ?? []));
-                          })?.apply(null, [actionArgs]);
-                        })()
-                      : undefined;
-                    if (
-                      $steps["runElementAction"] != null &&
-                      typeof $steps["runElementAction"] === "object" &&
-                      typeof $steps["runElementAction"].then === "function"
-                    ) {
-                      $steps["runElementAction"] =
-                        await $steps["runElementAction"];
-                    }
-                  }}
-                  openLinkInNewTab={true}
-                  roundedFull={true}
-                  size={"large"}
-                  start={
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__bspZp)}
-                      role={"img"}
+                        $steps["runElementAction"] = true
+                          ? (() => {
+                              const actionArgs = {};
+                              return (({ tplRef, action, args }) => {
+                                return $refs?.[tplRef]?.[action]?.(
+                                  ...(args ?? [])
+                                );
+                              })?.apply(null, [actionArgs]);
+                            })()
+                          : undefined;
+                        if (
+                          $steps["runElementAction"] != null &&
+                          typeof $steps["runElementAction"] === "object" &&
+                          typeof $steps["runElementAction"].then === "function"
+                        ) {
+                          $steps["runElementAction"] =
+                            await $steps["runElementAction"];
+                        }
+                      }}
+                      openLinkInNewTab={true}
+                      roundedFull={true}
+                      size={"extraLarge"}
+                      start={
+                        <Icon4Icon
+                          className={classNames(projectcss.all, sty.svg__bspZp)}
+                          role={"img"}
+                        />
+                      }
+                      type={"soft"}
                     />
-                  }
-                  type={"soft"}
-                />
-              </div>
+                  </Tilt>
+                </div>
+              </Reveal>
               <div className={classNames(projectcss.all, sty.freeBox__tHIju)}>
                 <ArrowDownSvgIcon
                   className={classNames(projectcss.all, sty.svg__qt37N)}
@@ -553,10 +568,8 @@ function PlasmicHomepage__RenderFunc(props: {
           <div className={classNames(projectcss.all, sty.freeBox___72Tsq)}>
             <div className={classNames(projectcss.all, sty.freeBox___67NlN)}>
               <Reveal
-                data-plasmic-name={"reveal"}
-                data-plasmic-override={overrides.reveal}
                 cascade={true}
-                className={classNames("__wab_instance", sty.reveal)}
+                className={classNames("__wab_instance", sty.reveal___0NmWl)}
                 damping={1000}
                 delay={300}
                 triggerOnce={true}
@@ -1673,15 +1686,15 @@ const PlasmicDescendants = {
     "root",
     "foreground2",
     "h1",
+    "tilt",
     "registerLink",
-    "reveal",
     "foreground",
     "foreground3"
   ],
-  foreground2: ["foreground2", "h1", "registerLink"],
+  foreground2: ["foreground2", "h1", "tilt", "registerLink"],
   h1: ["h1"],
+  tilt: ["tilt", "registerLink"],
   registerLink: ["registerLink"],
-  reveal: ["reveal", "foreground"],
   foreground: ["foreground"],
   foreground3: ["foreground3"]
 } as const;
@@ -1692,8 +1705,8 @@ type NodeDefaultElementType = {
   root: "div";
   foreground2: "div";
   h1: "h1";
+  tilt: typeof Tilt;
   registerLink: typeof Button2;
-  reveal: typeof Reveal;
   foreground: "div";
   foreground3: "div";
 };
@@ -1762,8 +1775,8 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     foreground2: makeNodeComponent("foreground2"),
     h1: makeNodeComponent("h1"),
+    tilt: makeNodeComponent("tilt"),
     registerLink: makeNodeComponent("registerLink"),
-    reveal: makeNodeComponent("reveal"),
     foreground: makeNodeComponent("foreground"),
     foreground3: makeNodeComponent("foreground3"),
 
