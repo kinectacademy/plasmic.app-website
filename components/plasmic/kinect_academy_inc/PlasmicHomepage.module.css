@@ -632,6 +632,11 @@
   min-width: 0;
   padding: 68px 8px 17px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___72Tsq {
+    padding: 28px 8px 17px;
+  }
+}
 .freeBox___67NlN {
   display: flex;
   position: relative;
@@ -663,7 +668,6 @@
 .img__vcPwu {
   object-fit: cover;
   max-width: 100%;
-  margin: 50px;
 }
 .img__vcPwu > picture > img {
   object-fit: cover;
@@ -690,7 +694,7 @@
   text-align: center;
   margin-bottom: 0px;
   min-width: 0;
-  padding: 7px 0px 0px;
+  padding: 37px 0px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h2__tmW09 {

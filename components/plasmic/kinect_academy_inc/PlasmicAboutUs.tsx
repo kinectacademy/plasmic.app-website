@@ -244,9 +244,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                           sty.text__qo7UX
                         )}
                       >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Services"
-                          : "HOME"}
+                        {"HOME"}
                       </div>
                       {false ? (
                         <IconIcon

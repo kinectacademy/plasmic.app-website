@@ -145,8 +145,6 @@ function PlasmicContactUs__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const globalVariants = _useGlobalVariants();
-
   const styleTokensClassNames = _useStyleTokens();
 
   return (
@@ -246,9 +244,7 @@ function PlasmicContactUs__RenderFunc(props: {
                           sty.text__eB4Gp
                         )}
                       >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Services"
-                          : "HOME"}
+                        {"HOME"}
                       </div>
                       {false ? (
                         <IconIcon
