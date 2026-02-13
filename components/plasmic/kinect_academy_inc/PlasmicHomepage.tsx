@@ -232,6 +232,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                       component={Link}
                       href={`/`}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -263,6 +264,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.link__pbOwj
                       )}
                       component={Link}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -294,6 +296,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.link___970O
                       )}
                       component={Link}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -329,6 +332,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                       component={Link}
                       href={`/contact`}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -364,6 +368,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                       component={Link}
                       href={`/about-us`}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -410,6 +415,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__wWs4V
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -586,9 +592,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     displayWidth={"auto"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/kinect_academy_inc/images/groupPhoto2023Png.png",
-                      fullWidth: 3799,
-                      fullHeight: 1995,
+                      src: "/plasmic/kinect_academy_inc/images/img99782Png.png",
+                      fullWidth: 1440,
+                      fullHeight: 791,
                       aspectRatio: undefined
                     }}
                   />
@@ -1379,6 +1385,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__wxIi
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1410,6 +1417,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link___65YZr
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1441,6 +1449,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__resN2
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1484,6 +1493,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__mzkXd
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1515,6 +1525,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link___3OdBi
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1546,6 +1557,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__pMb82
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1577,6 +1589,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__f3W9
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1649,29 +1662,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.text__tlLo
                 )}
               >
-                <React.Fragment>
-                  <React.Fragment>
-                    {
-                      "\u00a9 Kinect Academy Inc. All rights reserved. Site proudly built with "
-                    }
-                  </React.Fragment>
-                  {
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        projectcss.plasmic_default__inline,
-                        sty.link___9PwRj
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Plasmic"}
-                    </PlasmicLink__>
-                  }
-                  <React.Fragment>{"."}</React.Fragment>
-                </React.Fragment>
+                {"\u00a9 Kinect Academy Inc. All rights reserved."}
               </div>
             </div>
           </div>

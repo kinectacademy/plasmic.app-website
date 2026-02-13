@@ -663,6 +663,7 @@
 .img__vcPwu {
   object-fit: cover;
   max-width: 100%;
+  margin: 50px;
 }
 .img__vcPwu > picture > img {
   object-fit: cover;
@@ -1927,8 +1928,4 @@
   text-align: center;
   margin-top: 45px;
   min-width: 0;
-}
-.link___9PwRj {
-  animation: none;
-  color: var(--token-Dd6gyjIVe7XT);
 }

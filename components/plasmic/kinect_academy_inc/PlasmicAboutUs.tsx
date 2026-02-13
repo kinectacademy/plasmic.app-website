@@ -228,6 +228,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       )}
                       component={Link}
                       href={`/`}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -261,6 +262,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                         sty.link__frgj
                       )}
                       component={Link}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -292,6 +294,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                         sty.link__xy4Wd
                       )}
                       component={Link}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -327,6 +330,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       )}
                       component={Link}
                       href={`/contact`}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -359,6 +363,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       )}
                       component={Link}
                       href={`/about-us`}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {false ? (
@@ -403,6 +408,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       sty.link__cp1Xo
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1294,6 +1300,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       sty.link__yl4De
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1325,6 +1332,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       sty.link__lbsoX
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1356,6 +1364,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       sty.link__fsZ4H
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1399,6 +1408,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       sty.link__adjV8
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1430,6 +1440,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       sty.link__vilb7
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1461,6 +1472,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       sty.link__q1SSt
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1492,6 +1504,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       sty.link___44W4C
                     )}
                     component={Link}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {false ? (
@@ -1564,29 +1577,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                   sty.text__qhxh6
                 )}
               >
-                <React.Fragment>
-                  <React.Fragment>
-                    {
-                      "\u00a9 Kinect Academy Inc. All rights reserved. Site proudly built with "
-                    }
-                  </React.Fragment>
-                  {
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        projectcss.plasmic_default__inline,
-                        sty.link__p1MBu
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Plasmic"}
-                    </PlasmicLink__>
-                  }
-                  <React.Fragment>{"."}</React.Fragment>
-                </React.Fragment>
+                {"\u00a9 Kinect Academy Inc. All rights reserved."}
               </div>
             </div>
           </div>

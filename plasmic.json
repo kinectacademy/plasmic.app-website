@@ -602,6 +602,11 @@
           "id": "HUkMKI_Ueu_v",
           "name": "Group Photo 2023.png",
           "filePath": "../public/plasmic/kinect_academy_inc/images/groupPhoto2023Png.png"
+        },
+        {
+          "id": "stWjsXr4oRg2",
+          "name": "IMG_99782.png",
+          "filePath": "../public/plasmic/kinect_academy_inc/images/img99782Png.png"
         }
       ],
       "indirect": false,
@@ -729,6 +734,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.356",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.356/dist/plasmic.schema.json"
+  "cliVersion": "0.1.359",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.359/dist/plasmic.schema.json"
 }
